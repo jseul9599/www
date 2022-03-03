@@ -1,0 +1,67 @@
+[
+    {
+        "imgUrl" : "./images/sub2/character01.jpg",
+        "name" : "Geralt of Rivia",
+        "desc" : "Also known as the White Wolf and the Butcher of Blaviken, the famous witcher Geralt of Rivia has spent decades traveling the Continent slaying monsters for coin. While many think of him as an unfeeling mercenary, he has a strict code when it comes to what work to accept. He’s also very devoted to his friends and loved ones, willing to do anything he can to protect them."
+    },
+    {
+        "imgUrl" : "./images/sub2/character02.jpg",
+        "name" : "Princess Cirilla",
+        "desc" : "The granddaughter of Queen Calanthe is the sole survivor of the royal family of Cintra. She narrowly escaped the Nilfgaardian invasion at the outset of Season 1 and has faced many hardships on the way to finding Geralt. The White Wolf saved Ciri’s father’s life and, in return, called upon the Law of Surprise, an ancient custom where someone who owes their life to another rewards them with something they have but don’t know about yet. In this case, it turned out that Duny’s new bride, Pavetta, was already pregnant with Ciri. Destiny now bonds Geralt to Ciri."
+    },
+    {
+        "imgUrl" : "./images/sub2/character03.jpg",
+        "name" : "Yennefer of Vengerberg",
+        "desc" : "A quarter-elf, Yennefer was born with a deformed spine and spent her early years neglected, abused and bullied. She honed her power at the magical academy of Aretuza, where she underwent an enchantment that transformed her physically but removed her ability to have children. She has repeatedly defied the Brotherhood of Sorcerers’ expectations, abandoning her assignment as a royal adviser to pursue her own goals. However, she answered the call to Sodden Hill, making a stand alongside many other mages to stop the brutal army of Nilfgaard from invading the rest of the Northern Kingdoms after conquering Cintra. Yennefer was instrumental in turning the tide of the battle."
+    },
+    {
+        "imgUrl" : "./images/sub2/character04.jpg",
+        "name" : "Jaskier",
+        "desc" : "The bard Jaskier sees Geralt as his friend and muse, following him in search of fodder for his stories and ballads. He’s the Continent’s equivalent of a pop star, enjoying the adoration of fans though very prickly about criticism. He was nearly killed by a djinn, a powerful air demon capable of granting wishes, which led to Geralt meeting Yennefer. Geralt blamed Jaskier for his tumultuous relationship with Yennefer and having to claim Ciri as his Child of Surprise and left him on a mountain during a hunt for a dragon."
+    },
+    {
+        "imgUrl" : "./images/sub2/character05.jpg",
+        "name" : "Fringilla Vigo",
+        "desc" : "Fringilla excelled at Aretuza, but her intended assignment was stolen by Yennefer. She was sent to the nation of Nilfgaard instead, where she became fiercely loyal to Emperor Emhyr var Emreis, known as the White Flame. She helped lead the invasion of Cintra and the Battle of Sodden Hill, driving many mages to sacrifice themselves for forbidden fire magic."
+    },
+    {
+        "imgUrl" : "./images/sub2/character06.jpg",
+        "name" : "Cahir Mawr Dyffryn aep Ceallach",
+        "desc" : "A Nilfgaardian officer and close ally of Fringilla, Cahir tried repeatedly to capture Ciri. He killed her grandfather, King Eist, and briefly held Ciri prisoner before she used her powers to escape. He is a devoted follower of the White Flame and helped lead the uprising against the Usurper ruling Nilfgaard."
+    },
+    {
+        "imgUrl" : "./images/sub2/character07.jpg",
+        "name" : "Filavandrel aén Fidháil",
+        "desc" : "Filavandrel was once king of the elves and led an uprising to stop the genocide of his people. Queen Calanthe crushed his rebellion, and he was forced into hiding. He captured Geralt and Jaskier, and while he considered killing them to keep his location secret, he let them go and Jaskier wrote a ballad about him."
+    },
+    {
+        "imgUrl" : "./images/sub2/character08.jpg",
+        "name" : "Dara",
+        "desc" : "Dara repeatedly helped Ciri when she was on the run from Nilfgaardian forces. Even when he learned that her grandmother was responsible for the death of his family following Filavendrel’s uprising, Dara stayed with her, forsaking safety among the dryads of Brokilon. After saving Ciri from a shapeshifting doppler employed by Cahir, Dara realized Ciri was too dangerous to travel with and they parted ways."
+    },
+    {
+        "imgUrl" : "./images/sub2/character09.jpg",
+        "name" : "King Foltest",
+        "desc" : "The king of Temeria had an incestuous relationship with his sister, resulting in their cursed offspring becoming a striga, a monster fueled by hatred who feeds on human organs after tearing them out with her sharp claws. Geralt was able to break the curse and restore Princess Adelaide to human form. Foltest provided support to the mages that held back the armies of Nilfgaard at Sodden Hill, rallying both the forces of Temeria and his allies in Kaedwen, the largest of the Northern Kingdoms, by convincing them of the threat that Nilfgaard’s ambitions pose to the entire Continent."
+    },
+    {
+        "imgUrl" : "./images/sub2/character10.jpg",
+        "name" : "Tissaia de Vries",
+        "desc" : "The headmistress of Aretuza Academy will ruthlessly turn disappointing students into eels to supply her school with power, but she cares deeply about the mages who survive her initiation. She thinks of Yennefer as a daughter despite all their disagreements."
+    },
+    {
+        "imgUrl" : "./images/sub2/character11.jpg",
+        "name" : "Triss Merigold",
+        "desc" : "Triss enlisted Geralt to help stop the striga in Temeria and came to greatly respect the Witcher. She was badly injured at the Battle of Sodden."
+    },
+    {
+        "imgUrl" : "./images/sub2/character12.jpg",
+        "name" : "Vilgefortz of Roggeveen",
+        "desc" : "Vilgefortz worked with Tissaia to recruit mages to fight at the Battle of Sodden. He fought Cahir there and was defeated, though he survived."
+    },
+    {
+        "imgUrl" : "./images/sub2/character13.jpg",
+        "name" : "Istredd",
+        "desc" : "Istredd met Yennefer when she first manifested magic by opening a portal in front of him to escape being bullied in her village. That power led to her being recruited by Tissaia to attend Aretuza, where Istredd was conducting research. He helped tutor Yennefer while she was a student, and the two became lovers. His passion for history drove them apart, as Yennefer didn’t want to follow him on his expeditions across the Continent."
+    }
+]

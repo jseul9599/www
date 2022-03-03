@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>THE WITCHER</title>
+	<link rel="shortcut icon"  type="image/x-icon"  href="./favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+	<link rel="apple-touch-startup-image" href="./startup.png">
+
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/sub2.css">
+	<link rel="stylesheet" href="./css/sub_common.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+	<!-- <script src="js/prefixfree.min.js"></script> -->
+
+	<script>
+		// <![CDATA[
+			try {
+				window.addEventListener('load', function(){
+					setTimeout(scrollTo, 0, 0, 1); 
+				}, false);
+			} catch(e) {}
+		// ]]>
+	</script>
+</head>
+
+<body>
+	<div id="skipNav">
+		<a href="#content">Skip to main content</a>
+		<a href="#gnb">Skip to navigation</a>
+	</div>
+
+	<div id="wrap">
+		<header id="headerArea"></header>
+
+		<div class="videoBox">
+			<img src="./images/sub2/sub_bg.jpg" alt="visual image" id="imgBG">
+			<p></p>
+			<a class="scroll_down" href="#">SCROLL DOWN</a>
+		</div>
+
+		<article id="content">
+			<h2 class="hidden">Characters</h2>
+			<!-- characters_wrap -->
+			<div class="characters_wrap">
+				<div class="center_container">
+					<h3>The Characters</h3>
+					<p>Click the characters to see more details</p>
+					<ul></ul>
+				</div>
+			</div>
+			<!-- characters_info -->
+			<div class="characters_info pd-0">
+				<div class="character_img"></div>
+				<div class="character_text">
+					<div>
+						<p class="character_name"></p>
+						<p class="character_desc"></p>
+						<a href="#" class="character_close">BACK</a>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<footer id="footerArea"></footer>
+	</div>
+
+
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery-migrate-1.4.1.min.js"></script>
+
+	<script src="./js/common.js"></script>
+	<script src="./js/sub_common.js"></script>
+	<script src="./js/sub2.js"></script>
+
+</body>
+</html>

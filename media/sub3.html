@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>THE WITCHER</title>
+	<link rel="shortcut icon"  type="image/x-icon"  href="./favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+	<link rel="apple-touch-startup-image" href="./startup.png">
+
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/sub_common.css">
+	<link rel="stylesheet" href="./css/sub3.css">
+	<link rel="stylesheet" href="./css/magnific-popup.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	
+	<!-- <script src="js/prefixfree.min.js"></script> -->
+
+	<script>
+		// <![CDATA[
+			try {
+				window.addEventListener('load', function(){
+					setTimeout(scrollTo, 0, 0, 1); 
+				}, false);
+			} catch(e) {}
+		// ]]>
+	</script>
+</head>
+
+<body>
+	<div id="skipNav">
+		<a href="#content">Skip to main content</a>
+		<a href="#gnb">Skip to navigation</a>
+	</div>
+
+	<div id="wrap">
+		<header id="headerArea"></header>
+
+		<div class="videoBox">
+			<img src="./images/sub3/sub_bg.jpg" alt="visual image" id="imgBG">
+			<p></p>
+			<a class="scroll_down" href="#">SCROLL DOWN</a>
+		</div>
+
+		<article id="content">
+			<h2 class="hidden">Videos</h2>
+			<!-- trailers -->
+			<div class="trailers">
+				<div class="center_container">
+					<h3>Trailers</h3>
+					<ul>
+						<li>
+							<a href="https://www.youtube.com/watch?v=ndl1W4ltcmg" class="popup-youtube">
+								<img src="./images/sub3/trailer01.jpg" alt="season1 trailer">
+							</a>
+							<dl>
+								<dt>Season 1 Trailer | The Witcher</dt>
+								<dd>You can't outrun destiny just because you're terrified of it. Henry Cavill is Geralt of Rivia. The Witcher arrives December 20.</dd>
+							</dl>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/watch?v=WX6e6ZLNmtA" class="popup-youtube">
+								<img src="./images/sub3/trailer02.jpg" alt="season2 trailer">
+							</a>
+							<dl>
+								<dt>Season 2 Trailer | The Witcher</dt>
+								<dd>Destiny is a beast. Watch the official trailer for Season 2 of The Witcher. The Witcher Season 2 is streaming now,  only on Netflix.</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- cast -->
+			<div class="cast">
+				<div class="center_container">
+					<h3>Cast Videos</h3>
+					<ul>
+						<li>
+							<a href="https://www.youtube.com/watch?v=CCCIDnBmLfg" class="popup-youtube">
+								<img src="./images/sub3/cast01.jpg" alt="Meet the Witchers">
+							</a>
+							<p>Meet the Witchers</p>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/watch?v=zG1rdTwS7gQ" class="popup-youtube">
+								<img src="./images/sub3/cast02.jpg" alt="Meet the Mages">
+							</a>
+							<p>Meet the Mages</p>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/watch?v=BpVD_MrxwqM" class="popup-youtube">
+								<img src="./images/sub3/cast03.jpg" alt="Meet the Elves">
+							</a>
+							<p>Meet the Elves</p>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/watch?v=HTj03zCXQlI" class="popup-youtube">
+								<img src="./images/sub3/cast04.jpg" alt="Meet the Dwarves">
+							</a>
+							<p>Meet the Dwarves</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</article>
+
+		<footer id="footerArea"></footer>
+	</div>
+
+
+	<script src="./js/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery-migrate-1.4.1.min.js"></script>
+
+	<script src="./js/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(document).ready(function() {
+		$('.popup-youtube').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+
+			fixedContentPos: false
+		});
+	});
+	</script>
+
+	<script src="./js/common.js"></script>
+	<script src="./js/sub_common.js"></script>
+
+</body>
+</html>

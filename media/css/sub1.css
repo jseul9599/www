@@ -1,0 +1,269 @@
+/* =============== .synopsis =============== */
+#content .synopsis .center_container h3::before{
+   content: 'ABOUT';
+}
+
+.synopsis p{
+   text-align: center;
+   color: #fff;
+}
+
+.synopsis p:nth-child(2){
+   margin-bottom: 1.3rem;
+}
+
+
+
+/* =============== .season =============== */
+#content .season .center_container h3::before{
+   content: 'ABOUT';
+}
+
+.season{
+   background: #0d0d0d;
+}
+
+.season .center_container > div{
+   margin-bottom: 5rem;
+   overflow: hidden;
+   padding: 0 15%;
+   color: #fff;
+}
+
+.season .center_container .first_season dl{
+   width: 60%;
+   float: left;
+   padding: 3rem;
+}
+
+.season .center_container .first_season .season_img{
+   width: 40%;
+   float: right;
+   overflow: hidden;
+}
+
+.season .center_container .second_season dl{
+   width: 60%;
+   float: right;
+   padding: 3rem;
+}
+
+.season .center_container .second_season .season_img{
+   width: 40%;
+   float: left;
+   overflow: hidden;
+}
+
+.season .center_container .first_season .season_img img,
+.season .center_container .second_season .season_img img{
+   transition: .3s;
+}
+
+.season .center_container .first_season .season_img:hover img,
+.season .center_container .second_season .season_img:hover img{
+   transform: scale(1.1);
+}
+
+.season .center_container div dl dt{
+   font-size: 1.7rem;
+   margin-bottom: 1rem;
+}
+
+.season .center_container div dl dd{
+   line-height: 2rem;
+}
+
+.season .center_container div dl dd .watch_now{
+   color: #fff;
+   border-radius: 5px;
+   background: #d1151e;
+   display: block;
+   width: 50%;
+   text-align: center;
+   font-weight: bold;
+   padding: .5rem 0;
+   margin-top: 1rem;
+   transition: .3s;
+}
+
+.season .center_container div dl dd .watch_now:hover{
+   color: #d1151e;
+   background: #fff;
+}
+
+
+
+/* =============== .episodes_gallery =============== */
+#content .episode_gallery .center_container h3::before{
+   content: 'EPISODES';
+}
+
+.episode_gallery{
+   color: #fff;
+}
+
+.episode_gallery .ep_gallery_wrap{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.episode_gallery .ep_gallery_wrap ul{
+   width: 50%;
+   display: grid;
+}
+
+.episode_gallery .ep_gallery_wrap ul:nth-child(1),
+.episode_gallery .ep_gallery_wrap ul:nth-child(4){
+   grid-template-columns: 1fr 1fr;
+}
+
+.episode_gallery .ep_gallery_wrap ul:nth-child(1) li:nth-child(1),
+.episode_gallery .ep_gallery_wrap ul:nth-child(4) li:nth-child(1){
+   grid-row: 1/3;
+}
+
+.episode_gallery .ep_gallery_wrap ul:nth-child(2),
+.episode_gallery .ep_gallery_wrap ul:nth-child(3){
+   grid-template-columns: 1fr 1fr;
+}
+
+.episode_gallery .ep_gallery_wrap ul li{
+   position: relative;
+   transition: .3s;
+}
+
+.episode_gallery .ep_gallery_wrap ul li .ep_info{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   padding: 1rem;
+   background: rgba(225, 225, 225, .85);
+   color: #333;
+   display: none;
+   transition: .3s;
+}
+
+.episode_gallery .ep_gallery_wrap ul li .ep_info strong{
+   display: block;
+   font-size: 1.15em;
+}
+
+.episode_gallery .ep_gallery_wrap:hover ul li{
+   filter: brightness(30%);
+}
+
+.episode_gallery .ep_gallery_wrap ul li:hover{
+   filter: brightness(1);
+}
+
+.episode_gallery .ep_gallery_wrap ul li:hover .ep_info{
+   display: block;
+}
+
+
+
+
+
+/* =============== Media Query =============== */
+/* === Desktop === */
+@media screen and (max-width:1280px) {
+   .season .center_container .first_season dl,
+   .season .center_container .second_season dl{
+      padding: 2rem;
+   }
+
+   .episode_gallery .ep_gallery_wrap ul li .ep_info{
+      padding: 1rem;
+   }
+}
+
+
+/* === Tablet === */
+@media screen and (max-width:1024px) {
+   .season .center_container > div{
+      padding: 0;
+   }
+
+   .season .center_container .first_season dl,
+   .season .center_container .second_season dl{
+      width: 50%;
+   }
+   
+   .season .center_container .first_season .season_img,
+   .season .center_container .second_season .season_img{
+      width: 50%;
+   }
+
+   .season .center_container div dl dd .watch_now{
+      width: 80%;
+   }
+
+   .episode_gallery .ep_gallery_wrap ul:nth-child(1),
+   .episode_gallery .ep_gallery_wrap ul:nth-child(4){
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .episode_gallery .ep_gallery_wrap ul:nth-child(1) li:nth-child(2),
+   .episode_gallery .ep_gallery_wrap ul:nth-child(1) li:nth-child(3),
+   .episode_gallery .ep_gallery_wrap ul:nth-child(4) li:nth-child(2),
+   .episode_gallery .ep_gallery_wrap ul:nth-child(4) li:nth-child(3){
+      display: none;
+   }
+}
+
+
+/* === Tablet_small === */
+@media screen and (max-width:768px) {
+   .season .center_container div dl dd .watch_now{
+      display: none;
+   }
+
+   .synopsis p{
+      text-align: justify;
+   }
+
+   .episode_gallery .ep_gallery_wrap ul{
+      width: 100%;
+   }
+}
+
+
+/* === Mobile === */
+@media screen and (max-width:640px) {
+   .videoBox p{
+      font-size: 3rem;
+   }
+
+   #content div .center_container h3{
+      font-size: 2.25rem;
+   }
+   
+   #content div .center_container h3::before{
+      font-size: 1.5rem;
+   }
+
+   .season .center_container .first_season dl,
+   .season .center_container .second_season dl{
+      float: none;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 1rem;
+   }
+
+   .season .center_container .first_season .season_img,
+   .season .center_container .second_season .season_img{
+      width: 100%;
+   }
+
+   .season .center_container div dl dd{
+      line-height: 1.5rem;
+   }
+
+   .episode_gallery .ep_gallery_wrap ul:nth-child(2),
+   .episode_gallery .ep_gallery_wrap ul:nth-child(3){
+      display: none;
+   }
+}
+

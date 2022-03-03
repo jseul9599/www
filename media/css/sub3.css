@@ -1,0 +1,117 @@
+/* =============== .trailers =============== */
+#content .trailers .center_container h3::before{
+   content: 'OFFICAL';
+}
+
+.trailers ul{
+   display: flex;
+   justify-content: space-between;
+   gap: 2rem;
+}
+
+.trailers ul li a{
+   display: block;
+   overflow: hidden;
+}
+
+.trailers ul li a img{
+   transition: .3s;
+}
+
+.trailers ul li a:hover img{
+   transform: scale(1.05);
+}
+
+.trailers ul li p{
+   color: #fff;
+   font-size: 1.5rem;
+   font-weight: 700;
+   margin-top: .5rem;
+
+   display: none;
+}
+
+.trailers ul li dl{
+   color: #fff;
+   margin-top: 1rem;
+}
+
+.trailers ul li dl dt{
+   font-size: 1.5rem;
+   font-weight: 700;
+   margin-bottom: .5rem;
+}
+
+
+
+/* =============== .cast =============== */
+#content .cast .center_container h3::before{
+   content: "WHO'S WHO";
+}
+
+.cast ul{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.cast ul li{
+   width: 23%;
+   color: #fff;
+   text-overflow: ellipsis;
+}
+
+.cast ul li a{
+   display: block;
+   overflow: hidden;
+}
+
+.cast ul li a img{
+   transition: .3s;
+}
+
+.cast ul li a:hover img{
+   transform: scale(1.05);
+}
+
+.cast ul li p{
+   font-size: 1.15rem;
+   margin: .5rem 0;
+   text-align: center;
+}
+
+
+
+
+
+/* =============== Media Query =============== */
+/* === Desktop === */
+@media screen and (max-width:1280px) {}
+
+
+/* === Tablet === */
+@media screen and (max-width:1024px) {
+   .cast ul li{
+      width: 48%;
+      margin-bottom: 2rem;
+   }
+}
+
+
+/* === Tablet_small === */
+@media screen and (max-width:768px) {
+   .trailers ul{
+      flex-direction: column;
+   }
+}
+
+
+/* === Mobile === */
+@media screen and (max-width:640px) {
+   .cast ul li{
+      width: 100%;
+   }
+}
+
+
+

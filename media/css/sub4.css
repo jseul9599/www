@@ -1,0 +1,64 @@
+/* =============== .masonry =============== */
+#content .gallery .center_container h3::before{
+   content: 'THE WITCHER';
+}
+
+.grid{
+   transition: .3s;
+}
+
+.grid .grid-item{
+   width: 24%;
+   margin: 0 0.5% 1.5rem;
+   transition: .3s;
+}
+
+.grid:hover .grid-item{
+   filter: brightness(30%);
+}
+
+.grid .grid-item:hover{
+   filter: brightness(1);
+}
+
+.grid .grid-item img{
+   border-radius: 10px;
+}
+
+.grid .grid-item p{
+   color: #fff;
+   font-weight: bold;
+}
+
+
+
+
+
+
+
+/* =============== Media Query =============== */
+/* === Desktop === */
+@media screen and (max-width:1280px) {}
+
+
+/* === Tablet === */
+@media screen and (max-width:1024px) {
+   .grid-item{
+      width: 32.3333%;
+      margin: 0 .5% 1.5rem 0.5%;
+   }
+}
+
+
+/* === Tablet_small === */
+@media screen and (max-width:768px) {}
+
+
+/* === Mobile === */
+@media screen and (max-width:640px) {
+   .grid-item{
+      width: 48%;
+      margin: 0 1% 1.5rem 1%;
+   }
+}
+
