@@ -1,0 +1,127 @@
+{
+    "cellulose" : [
+        {
+            "product" : "MECELLOSE",
+            "name" : "Myung-Hyun Kim",
+            "phone" : "+82-2-6974-4822",
+            "email" : "Mecellose_sales@lottechem.com"
+        },
+        {
+            "product" : "HECELLOSE",
+            "name" : "Kyung-Hee Cho",
+            "phone" : "+82-2-6974-4836",
+            "email" : "Hecellose_sales@lottechem.com"
+        },
+        {
+            "product" : "AnyCoat",
+            "name" : "DK ROH",
+            "phone" : "+82-2-6974-4839",
+            "email" : "AnyCoat_sales@lottechem.com"
+        },
+        {
+            "product" : "AnyAddy",
+            "name" : "Jae-Young Ahn",
+            "phone" : "+82-2-6974-4832",
+            "email" : "AnyAddy_sales@lottechem.com"
+        }
+    ],
+
+    "chlorine" : [
+        {
+            "product" : "ECH (Epichlorohydrin)",
+            "name" : "Suhan Kim",
+            "phone" : "+82-2-6974-4736",
+            "email" : "suhan.kim@lotte.net"
+        },
+        {
+            "product" : "HYPO (Sodium Hypochlorite)",
+            "name" : "Seongrim Jeong",
+            "phone" : "+82-2-6974-4674",
+            "email" : "Seongrim.Jeong@lotte.net"
+        },
+        {
+            "product" : "Caustic Soda (Sodium Hydroxide)",
+            "name" : "Daeyoung(Chris) Do",
+            "phone" : "+82-2-6974-4719",
+            "email" : "dy.do@lotte.net"
+        },
+        {
+            "product" : "PTAC",
+            "name" : "Chaehong Lim",
+            "phone" : "+82-2-6974-4643",
+            "email" : "chhlim@lotte.net"
+        },
+        {
+            "product" : "MC (Methyl Chloride)",
+            "name" : "Jong-youl Kim",
+            "phone" : "+82-2-6974-4712",
+            "email" : "kimjongyoul@lotte.net"
+        },
+        {
+            "product" : "MCL (Methylene Chloride)",
+            "name" : "Jong-youl Kim",
+            "phone" : "+82-2-6974-4712",
+            "email" : "kimjongyoul@lotte.net"
+        },
+        {
+            "product" : "CFM (Chloroform)",
+            "name" : "Jong-youl Kim",
+            "phone" : "+82-2-6974-4712",
+            "email" : "kimjongyoul@lotte.net"
+        },
+        {
+            "product" : "Hydrochloric acid",
+            "name" : "Daeyoung(Chris) Do",
+            "phone" : "+82-2-6974-4719",
+            "email" : "dy.do@lotte.net"
+        }
+    ],
+
+    "general" : [
+        {
+            "product" : "Ammonia (Anhydrous ammonia)",
+            "name" : "John Kwon",
+            "phone" : "+82-2-6974-4734",
+            "email" : "johnkwon@lotte.net"
+        },
+        {
+            "product" : "MMA (Monomethylamine)",
+            "name" : "Chaehong Lim",
+            "phone" : "+82-2-6974-4643",
+            "email" : "chhlim@lotte.net"
+        },
+        {
+            "product" : "DMA (Dimethylamine)",
+            "name" : "Chaehong Lim",
+            "phone" : "+82-2-6974-4643",
+            "email" : "chhlim@lotte.net"
+        },
+        {
+            "product" : "TMAC",
+            "name" : "Chaehong Lim",
+            "phone" : "+82-2-6974-4643",
+            "email" : "chhlim@lotte.net"
+        },
+        {
+            "product" : "EUROX® (Urea Solution)",
+            "name" : "Jae-min Jo",
+            "phone" : "+82-2-6974-4744",
+            "email" : "jjm@lotte.net"
+        }
+    ],
+
+    "ecm" : [
+        {
+            "product" : "TMAC",
+            "name" : "Chaehong Lim",
+            "phone" : "+82-2-6974-4643",
+            "email" : "chhlim@lotte.net"
+        },
+        {
+            "product" : "Toner",
+            "name" : "Jun-hee Lee",
+            "phone" : "+82-2-6974-4522",
+            "email" : "leejunhee@lotte.net"
+        }
+    ]
+}

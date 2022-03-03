@@ -1,0 +1,130 @@
+/* =============== .content_area =============== */
+.content_area > div{
+    margin-bottom: 100px;
+}
+
+
+
+/* =============== .history =============== */
+.history{
+    position: relative;
+    padding-top: 50px;
+}
+
+.history::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    background: #aaa;
+}
+
+.history .circle{
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 1px solid #ED1C24;
+    border-radius: 100%;
+    z-index: 20;
+    transition: .5s linear;
+}
+
+.history .circle::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #ED1C24;
+    border-radius: 100%;
+}
+
+.history ul li{
+    overflow: hidden;
+    margin: 130px 0;
+    position: relative;
+}
+
+.history ul li:first-child{
+    margin-top: 30px;
+}
+
+.history ul li::before{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #aaa;
+}
+
+.history ul li::after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 75px;
+    border-top: 1px dashed #aaa;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.history ul li .history_img{
+    float: left;
+    width: 50%;
+    padding-right: 100px;
+}
+
+.history ul li .history_img img{
+    box-shadow: 0 0 30px rgb(132 132 132 / 30%);
+}
+
+.history ul li .history_text{
+    width: 50%;
+    float: right;
+    padding-left: 100px;
+}
+
+.history ul li .history_text h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.history ul li .history_text dl{
+    margin-bottom: 10px;
+}
+
+.history ul li .history_text dl dt{
+    font-size: 20px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.history ul li .history_text dl dd{
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+
+
+/* === SCROLL EFFECT === */
+.scroll_item.scroll-active h3{
+    color: #ED1C24;
+}
+
+.scroll_item.scroll-active .history_text dl dt{
+    color: #ED1C24;
+}

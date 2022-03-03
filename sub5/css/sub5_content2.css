@@ -1,0 +1,65 @@
+/* =============== .content_area =============== */
+.content_area > div{
+    margin-bottom: 100px;
+}
+
+
+
+/* =============== .job_desc =============== */
+.job_desc h3{
+    padding: 20px 0;
+    padding-left: 80px;
+    font-size: 30px;
+    position: relative;
+}
+
+.job_desc h3::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+}
+
+.job_desc.con1 h3::before{
+    background: url(../images/content2/red01.png) center/cover;
+}
+
+.job_desc.con2 h3::before{
+    background: url(../images/content2/red02.png) center/cover;
+}
+
+.job_desc.con3 h3::before{
+    background: url(../images/content2/red03.png) center/cover;
+}
+
+.job_desc.con4 h3::before{
+    background: url(../images/content2/red04.png) center/cover;
+}
+
+.job_desc.con5 h3::before{
+    background: url(../images/content2/red05.png) center/cover;
+}
+
+.job_desc table{
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    width: 100%;
+}
+
+.job_desc table tr{
+    border-bottom: 1px solid #aaa;
+}
+
+.job_desc table tr th{
+    background: #f5f5f5;
+    padding: 20px 0;
+    width: 200px;
+    text-align: center;
+}
+
+.job_desc table tr td{
+    padding-left: 30px;
+}

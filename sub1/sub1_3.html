@@ -1,0 +1,140 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개 - 사업장 안내</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content3.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=30102e2970ba630804583cc709c8ce6f"></script>
+    <script src="./js/kakao_map.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <p>
+                <span>C</span>
+                <span>O</span>
+                <span>M</span>
+                <span>P</span>
+                <span>A</span>
+                <span>N</span>
+                <span>Y</span>
+            </p>
+            <h3>회사소개</h3>
+        </div>
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub1_1.html">회사현황</a></li>
+                <li><a href="./sub1_2.html">연혁</a></li>
+                <li class="current"><a href="./sub1_3.html">사업장 안내</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i>
+                    <span>회사소개</span>
+                    <strong>사업장 안내</strong>
+                </div>
+                <h2>사업장 안내</h2>
+                <p>롯데정밀화학은 고객과 항상 함께합니다</p>
+            </div>
+            <!-- content_area -->
+            <div class="content_area">
+                <!-- <div class="tab_menu">
+                    <ul>
+                        <li class="tab"><a href="#">울산사업장</a></li>
+                        <li><a href="#">서울사업장</a></li>
+                        <li><a href="#">인천사업장</a></li>
+                    </ul>
+                </div> -->
+                <div class="office ulsan tab">
+                    <h3>울산사업장 (본사)</h3>
+                    <div class="office_map">
+                        <div id="mapUlsan" style="width:100%;height:450px;"></div>
+                    </div>
+                    <div class="office_info">
+                        <div class="address">
+                            <div class="icon"><img src="./images/content3/office01.png" alt="아이콘 이미지"></div>
+                            <ul>
+                                <li><span>주소</span>울산 남구 여천로217번길 19(여천동)</li>
+                                <li><span>대표전화</span>052 - 270 - 6114</li>
+                                <li><span>팩스</span>052 - 272 - 7925</li>
+                            </ul>
+                        </div>
+                        <div class="traffic">
+                            <div class="icon"><img src="./images/content3/office02.png" alt="아이콘 이미지"></div>
+                            <ul><li><span>지선</span>808, 807, 226</li>
+                                <li><span>간선</span>5001, 5002, 1703</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office seoul">
+                    <h3>서울사업장</h3>
+                    <div class="office_map">
+                        <div id="mapSeoul" style="width:100%;height:450px;"></div>
+                    </div>
+                    <div class="office_info">
+                        <div class="address">
+                            <div class="icon"><img src="./images/content3/office01.png" alt="아이콘 이미지"></div>
+                            <ul>
+                                <li><span>주소</span>서울특별시 강남구 테헤란로 534 (대치동) 글라스타워빌딩26, 27층</li>
+                                <li><span>대표전화</span>02 - 6974 - 4500</li>
+                                <li><span>팩스</span>02 - 6974 - 4546</li>
+                            </ul>
+                        </div>
+                        <div class="traffic">
+                            <div class="icon"><img src="./images/content3/office02.png" alt="아이콘 이미지"></div>
+                            <ul><li><span>지선</span>2416</li>
+                                <li><span>간선</span>146, 360, 740</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office incheon">
+                    <h3>인천사업장</h3>
+                    <div class="office_map">
+                        <div id="mapIncheon" style="width:100%;height:450px;"></div>
+                    </div>
+                    <div class="office_info">
+                        <div class="address">
+                            <div class="icon"><img src="./images/content3/office01.png" alt="아이콘 이미지"></div>
+                            <ul>
+                                <li><span>주소</span>인천 남동구 남동대로79번길 47(고잔동) 남동공단 129B 4L</li>
+                                <li><span>대표전화</span>032 - 816 - 5981</li>
+                                <li><span>팩스</span>032 - 816 - 4501</li>
+                            </ul>
+                        </div>
+                        <div class="traffic">
+                            <div class="icon"><img src="./images/content3/office02.png" alt="아이콘 이미지"></div>
+                            <ul><li><span>지선</span>55</li>
+                                <li><span>간선</span>3-2, 35, 65, 72</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <!-- <script src="./js/tab_menu.js"></script> -->
+
+</body>
+</html>

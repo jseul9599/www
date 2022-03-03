@@ -1,0 +1,112 @@
+/* =============== .content_area =============== */
+.content_area > div{
+    margin-bottom: 100px;
+}
+
+
+
+/* =============== .brand =============== */
+.brand ul li{
+    margin-bottom: 100px;
+    width: 2000px;
+    height: 450px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -1000px;
+}
+
+.brand ul li::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.brand ul li:nth-child(odd) img{
+    width: 50%;
+    float: left;
+}
+
+.brand ul li:nth-child(odd) .brand_text{
+    width: 35%;
+    float: left;
+    padding: 50px 0 50px 50px;
+}
+
+.brand ul li:nth-child(even) img{
+    width: 50%;
+    float: right;
+}
+
+.brand ul li:nth-child(even) .brand_text{
+    width: 35%;
+    float: right;
+    padding: 50px 50px 50px 0;
+}
+
+.brand ul li .brand_text h3{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.brand ul li:nth-child(1) .brand_text h3{color: #45a848;}
+.brand ul li:nth-child(2) .brand_text h3{color: #2599c8;}
+.brand ul li:nth-child(3) .brand_text h3{color: #35ab85;}
+.brand ul li:nth-child(4) .brand_text h3{color: #0d4da3;}
+.brand ul li:nth-child(5) .brand_text h3{color: #00235d;}
+
+.brand ul li .brand_text dl dt{
+    font-weight: 700;
+    font-size: 18px;
+    color: #aaa;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 20px;
+}
+
+.brand ul li .brand_text a{
+    display: block;
+    width:40%;
+    padding: 20px 40px;
+    border: 1px solid #333;
+    margin-top: 50px;
+    position: relative;
+    transition: .3s;
+}
+
+.brand ul li .brand_text a::after{
+    content: '\f00e';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+.brand ul li .brand_text a:hover{
+    color: #fff;
+    background: #333;
+}
+
+
+
+/* === SCROLL EFFECT === */
+.scroll_item{
+    opacity: 0;
+}
+
+.scroll-active{
+    animation: scroll-animation .7s forwards;
+}
+
+@keyframes scroll-animation{
+    0%{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

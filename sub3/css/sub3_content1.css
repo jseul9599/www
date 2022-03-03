@@ -1,0 +1,352 @@
+/* =============== .content_area =============== */
+.content_area > div{
+    margin-bottom: 100px;
+}
+
+.content_area div h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.content_area div h3::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 5px;
+    height: 60%;
+    background: #ED1C24;
+}
+
+
+
+/* =============== .vision =============== */
+.vision .vision_img{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to right, rgba(0, 0, 0, .5), transparent),
+                url(../images/content1/vision.jpg) no-repeat center/cover;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.vision .vision_img p{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.vision .vision_img p span{
+    color: #ED1C24;
+}
+
+.vision p{
+    line-height: 2em;
+    font-size: 18px;
+}
+
+
+
+/* =============== .principle =============== */
+.principle{
+    background: #f5f5f5;
+    width: 2000px;
+    position: relative;
+    left: 50%;
+    margin-left: -1000px;
+    padding: 80px 0;
+}
+
+.principle .center_container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.principle p{
+    margin-bottom: 20px;
+    line-height: 2em;
+    font-size: 18px;
+}
+
+.principle ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.principle ul li{
+    width: 23.5%;
+    height: 280px;
+    margin-right: 2%;
+    float: left;
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: justify;
+}
+
+.principle ul li:last-child{
+    margin-right: 0;
+}
+
+.principle ul li span{
+    display: block;
+    color: #ED1C24;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+/* ============== STRATEGY ============== */
+.strategy .pentagon_box{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 150px auto 200px;
+}
+
+.strategy .pentagon_box::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../images/content1/strategy.png) no-repeat center/cover;
+    z-index: 10;
+}
+
+.strategy .pentagon_box .pentagon{
+    /* clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #ED1C24;
+    background: url(../images/content1/pentagon.png) no-repeat;
+}
+
+.strategy .pentagon_box p{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.strategy .pentagon_box .strategy_con{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+}
+
+.strategy .pentagon_box .strategy_con::before{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    background: #fff;
+    border: 2px solid #ED1C24;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.con1{
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.con1::before{
+    content: '01';
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.con2{
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    padding-left: 40px;
+}
+
+.con2::before{
+    content: '02';
+    position: absolute;
+    top: 0;
+    left: -15%;
+}
+
+.con3{
+    top: 100%;
+    right: -100%;
+    transform: translateX(-50%);
+    padding-left:  70px;
+}
+
+.con3::before{
+    content: '03';
+    top: -50%;
+    left: 0;
+}
+
+.con4{
+    top: 100%;
+    left: -100%;
+    transform: translateX(50%);
+    padding-right: 70px;
+    text-align: right;
+}
+
+.con4::before{
+    content: '04';
+    top: -50%;
+    right: 0;
+}
+
+.con5{
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    padding-right: 40px;
+    text-align: right;
+}
+
+.con5::before{
+    content: '05';
+    top: 0;
+    right: -15%;
+}
+
+.strategy .pentagon_box .strategy_con dt{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+
+/* =============== .management =============== */
+/* tab_menu */
+.tab_menu{
+    margin: 50px 0;
+}
+
+.tab_menu ul{
+    overflow: hidden;
+}
+
+.tab_menu ul li{
+    float: left;
+    width: 25%;
+    background: #f5f5f5;
+}
+
+.tab_menu ul li:last-child{
+    border-right: none;
+}
+
+.tab_menu ul li a{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    position: relative;
+}
+
+
+/* tab_con */
+.tab_con div{
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.tab_con div dl{
+    width: 45%;
+    float: left;
+}
+
+.tab_con div dl dt{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ED1C24;
+}
+
+.tab_con div dl dd{
+    line-height: 2em;
+}
+
+.tab_con div img{
+    width: 600px;
+    height: 250px;
+    float: right;
+}
+
+
+
+/* === SCROLL EFFECT === */
+.scroll_item{
+    opacity: 0;
+}
+
+.scroll-active{
+    animation: scroll-animation .7s forwards;
+}
+
+.scroll-active:nth-child(2){animation-delay: .1s;}
+.scroll-active:nth-child(3){animation-delay: .2s;}
+.scroll-active:nth-child(4){animation-delay: .3s;}
+
+@keyframes scroll-animation{
+    0%{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* === TAB MENU EFFECT === */
+.tab_menu ul li.tab-active a{
+    background: #fff;
+    color: #ED1C24;
+    font-weight: 700;
+}
+
+.tab_menu ul li.tab-active a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: #ED1C24;
+}
+
+.tab_con div.tab-active{
+    display: block;
+}

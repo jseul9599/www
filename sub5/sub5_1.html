@@ -1,0 +1,122 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용 - 인재상</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content1.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <p>
+                <span>C</span>
+                <span>A</span>
+                <span>R</span>
+                <span>E</span>
+                <span>E</span>
+                <span>R</span>
+                <span>S</span>
+            </p>
+            <h3>인재채용</h3>
+        </div>
+
+        <div class="sub_menu">
+            <ul>
+                <li class="current"><a href="./sub5_1.html">인재상</a></li>
+                <li><a href="./sub5_2.html">직무소개</a></li>
+                <li><a href="../greet/list.php">채용공고</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i>
+                    <span>인재채용</span>
+                    <strong>인재상</strong>
+                </div>
+                <h2>인재상</h2>
+                <p>실패를 두려워하지 않고 끊임없이 노력하며 협력과 상생을 아는 젊은이를 찾습니다</p>
+            </div>
+            <!-- content-area -->
+            <div class="content_area">
+                <div class="people scroll_item">
+                    <h3>인재상</h3>
+                    <ul>
+                        <li>
+                            <p class="people_title"><span>실패</span>를 <span>두려워하지 않는</span> 젊은이</p>
+                            <img src="./images/content1/people01.jpg" alt="인재상 이미지">
+                            <p class="people_text">창의적 사고와 <strong>끊임없는 혁신</strong>으로 <strong>변화를 추구</strong>하며 창조적 실패를 통해 <strong>성공</strong>을 이루는 인재</p>
+                        </li>
+                        <li>
+                            <p class="people_title"><span>끊임없이 노력하는</span> 젊은이</p>
+                            <img src="./images/content1/people02.jpg" alt="인재상 이미지">
+                            <p class="people_text"><strong>진정한 실력</strong>으로 성공을 쟁취하기 위해 끊임없이 노력하며 <strong>인내와 성실성</strong>을 가진 인재</p>
+                        </li>
+                        <li>
+                            <p class="people_title"><span>협력</span>과 <span>상생</span>을 아는 젊은이</p>
+                            <img src="./images/content1/people03.jpg" alt="인재상 이미지">
+                            <p class="people_text">동료와의 <strong>신뢰</strong>를 바탕으로 <strong>소통</strong>하고 <strong>화합</strong>하는 자세를 가진 인재</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="process scroll_item">
+                    <div class="center_container">
+                        <h3>채용 절차</h3>
+                        <ul>
+                            <li class="first">
+                                <span>서류 전형</span>
+                            </li>
+                            <li>
+                                <span>인적성 검사</span>
+                            </li>
+                            <li>
+                                <span>면접 전형</span>
+                            </li>
+                            <li>
+                                <span>건강 검진</span>
+                            </li>
+                            <li>
+                                <span>입사</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="junior">
+                    <h3>신입사원 채용</h3>
+                    <ul>
+                        <li><span>1.</span> 매년, 상 하반기 2회로 상반기는 3월~5월, 하반기는 9월~11월에 정기적으로 공개모집 채용을 진행합니다.</li>
+                        <li><span>2.</span> 채용의 기본일정 및 모집 공고는 그룹 공동으로 진행하며, 이후 면접전형과 합격자 선발은 관계사별로 진행합니다.</li>
+                        <li><span>3.</span> 모집전공은 채용시기에 따라 변경될 수 있으니 반드시 공고확인 바랍니다.</li>
+                    </ul>
+                </div>
+                <div class="senior">
+                    <h3>경력사원 채용</h3>
+                    <ul>
+                        <li>1. 각 부분별 채용 소요에 따라 비 정기적으로 진행하며, 직무경력, 전문성, 인성 및 가치관 등을 면접전형을 통해 심사합니다.</li>
+                        <li>2. 박사급 및 학사의 경우 해당경력 3년 이상, 석사의 경우 해당경력 1년 보유자를 대상으로 하나 채용시기에 따라 변경될 수 있으니 반드시 공고확인 바랍니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script src="../common/js/scroll_effect.js"></script>
+
+</body>
+</html>

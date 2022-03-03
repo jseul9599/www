@@ -1,0 +1,67 @@
+/* =============== .content_area =============== */
+.content_area > div{
+    margin-bottom: 100px;
+}
+
+
+
+/* =============== .quality =============== */
+.quality > ul > li{
+    margin-bottom: 100px;
+}
+
+.quality > ul > li:first-child{
+    padding-top: 0;
+}
+
+.quality > ul > li:last-child{
+    border-bottom: none;
+}
+
+.quality ul li .quality_text{
+    margin-bottom: 50px;
+}
+
+.quality ul li .quality_text h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.quality ul li .quality_text h3::before{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 5px;
+    height: 60%;
+    background: #ED1C24;
+}
+
+.quality ul li .quality_text ul li{
+    line-height: 2em;
+    font-size: 20px;
+}
+
+
+
+/* === SCROLL EFFECT === */
+.scroll_item img{
+    opacity: 0;
+}
+
+.scroll-active img{
+    animation: scroll-animation .7s forwards;
+}
+
+@keyframes scroll-animation{
+    0%{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

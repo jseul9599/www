@@ -1,0 +1,123 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍보센터 - 담당자 안내</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content4.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <p>
+                <span>P</span>
+                <span>R</span>
+                <span>C</span>
+                <span>E</span>
+                <span>N</span>
+                <span>T</span>
+                <span>E</span>
+                <span>R</span>
+            </p>
+            <h3>홍보센터</h3>
+        </div>
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="../concert/list.php">회사소식</a></li>
+                <li><a href="./sub4_2.html">PR자료실</a></li>
+                <li><a href="./sub4_3.html">온라인 신문고</a></li>
+                <li class="current"><a href="./sub4_4.html">담당자 안내</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i>
+                    <span>홍보센터</span>
+                    <strong>담당자 안내</strong>
+                </div>
+                <h2>담당자 안내</h2>
+                <p>롯데정밀화학은 고객의 소리에 귀 기울이고, 고객 만족을 극대화 하겠습니다.</p>
+            </div>
+            <!-- content-area -->
+            <div class="content_area">
+                <div class="cellulose">
+                    <h3>셀룰로스 계열</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>제품명</th>
+                                <th>담당자명</th>
+                                <th>연락처</th>
+                                <th>이메일 주소</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="chlorine">
+                    <h3>염소 계열</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>제품명</th>
+                                <th>담당자명</th>
+                                <th>연락처</th>
+                                <th>이메일 주소</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="general">
+                    <h3>일반화학 계열</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>제품명</th>
+                                <th>담당자명</th>
+                                <th>연락처</th>
+                                <th>이메일 주소</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="ecm">
+                    <h3>전자재료 계열</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>제품명</th>
+                                <th>담당자명</th>
+                                <th>연락처</th>
+                                <th>이메일 주소</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script src="./js/contact_data.js"></script>
+
+</body>
+</html>

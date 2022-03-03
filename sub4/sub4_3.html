@@ -1,0 +1,133 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍보센터 - 온라인 신문고</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content3.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <p>
+                <span>P</span>
+                <span>R</span>
+                <span>C</span>
+                <span>E</span>
+                <span>N</span>
+                <span>T</span>
+                <span>E</span>
+                <span>R</span>
+            </p>
+            <h3>홍보센터</h3>
+        </div>
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="../concert/list.php">회사소식</a></li>
+                <li><a href="./sub4_2.html">PR자료실</a></li>
+                <li class="current"><a href="./sub4_3.html">온라인 신문고</a></li>
+                <li><a href="./sub4_4.html">담당자 안내</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i>
+                    <span>홍보센터</span>
+                    <strong>온라인 신문고</strong>
+                </div>
+                <h2>온라인 신문고</h2>
+                <p>롯데정밀화학 신문고는 임직원과 협력회사 관계자의 불공정한 업무처리, 비윤리적인 사항,<br>개선해야 할 모습 등의 의견을 듣고자 마련한 제보창구 입니다</p>
+            </div>
+            <!-- content-area -->
+            <div class="content_area">
+                <div class="ethics">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt><span>01</span>제보대상</dt>
+                                <dd><i class="fas fa-chevron-right"></i>임직원의 공금횡령 및 수뢰 사실</dd>
+                                <dd><i class="fas fa-chevron-right"></i>금품 접대요구나 제공사실</dd>
+                                <dd><i class="fas fa-chevron-right"></i>비상장 거래업체에 대한 부당지분참여</dd>
+                                <dd><i class="fas fa-chevron-right"></i>기타 윤리강령에 위배되는 사항</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>02</span>제보방법</dt>
+                                <dd><span>이메일</span>lfcaudit@lotte.net</dd>
+                                <dd><span>우편</span>울산시 남구 여천로 217번길 19</dd>
+                                <dd><span>전화</span>052-270-6125</dd>
+                                <dd><span>팩스</span>052-270-6129</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <div class="register">
+                    <p class="register_comment"><span>*</span> 는 필수 입력 항목입니다.</p>
+                    <div class="email_form">
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label for="name"><span>*</span>이름</label>
+                                    <input type="text" class="form-control" placeholder="이름을 입력해 주세요." id="name" required data-validation-required-message="이름을 입력해 주세요.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label for="email"><span>*</span>e-mail</label>
+                                    <input type="email" class="form-control" placeholder="이메일을 입력해 주세요." id="email" required data-validation-required-message="이메일을 입력해 주세요.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label for="phone"><span>*</span>휴대폰</label>
+                                    <input type="tel" class="form-control" placeholder="휴대폰 번호를 입력해 주세요." id="phone" required data-validation-required-message="휴대폰 번호를 입력해 주세요.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="row control-group">
+                                <div class="form-group col-xs-12 floating-label-form-group controls">
+                                    <label for="message"><span>*</span>문의사항</label>
+                                    <textarea rows="5" class="form-control" placeholder="사실에 근거하지 않은 비방, 개인사생활, 각종 루머 관련 사항은 민원으로 처리되지 않습니다." id="message" required data-validation-required-message="내용을 입력해 주세요."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div id="success"></div>
+                            <div class="row">
+                                <div class="form-group col-xs-12 send">
+                                    <button type="submit" class="btn btn-success btn-lg">등록</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="./js/mail/bootstrap.min.js"></script>
+        <script src="./js/mail/contact_me.js"></script>
+        <script src="./js/mail/jqBootstrapValidation.js"></script>
+
+</body>
+</html>

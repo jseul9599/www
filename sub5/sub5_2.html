@@ -1,0 +1,86 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인재채용 - 직무소개</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub5common.css">
+    <link rel="stylesheet" href="./css/sub5_content2.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <p>
+                <span>C</span>
+                <span>A</span>
+                <span>R</span>
+                <span>E</span>
+                <span>E</span>
+                <span>R</span>
+                <span>S</span>
+            </p>
+            <h3>인재채용</h3>
+        </div>
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub5_1.html">인재상</a></li>
+                <li class="current"><a href="./sub5_2.html">직무소개</a></li>
+                <li><a href="../greet/list.php">채용공고</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i>
+                    <span>인재채용</span>
+                    <strong>직무소개</strong>
+                </div>
+                <h2>직무소개</h2>
+                <p>실패를 두려워하지 않고 끊임없이 노력하며 협력과 상생을 아는 젊은이를 찾습니다</p>
+            </div>
+
+            <!-- content_area -->
+            <div class="content_area">
+                <div class="job_desc con1 businessSupport">
+                    <h3>경영지원</h3>
+                    <table></table>
+                </div>
+                <div class="job_desc con2 sales">
+                    <h3>영업</h3>
+                    <table></table>
+                </div>
+                <div class="job_desc con3 productionManufacturing">
+                    <h3>생산/제조</h3>
+                    <table></table>
+                </div>
+                <div class="job_desc con4 productionSupport">
+                    <h3>생산지원</h3>
+                    <table></table>
+                </div>
+                <div class="job_desc con5 research">
+                    <h3>연구</h3>
+                    <table></table>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script src="./js/job_data.js"></script>
+
+</body>
+</html>

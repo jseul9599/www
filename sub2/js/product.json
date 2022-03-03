@@ -1,0 +1,100 @@
+[
+    {
+        "imgUrl" : "./images/content2/product01.jpg",
+        "productName" : "ECH",
+        "summary" : "Epoxy resin원료, 물에 강한 합성수지 제품",
+        "property" : "- 특성 : 무색투명한 액체<br>- 분자량 : 92.53<br>- 비중(20℃) : 1.1801<br>- 비점(760mmHg) : 115.1℃<br>- 융점 : -48℃<br>- 점도(20℃) : 1.12cps<br>- 폭발한계 : 3.8~20Vol%(in air)<br>- 인화점 : 40.5℃",
+        "packaging" : "- 240kg Steel Drum<br>- Tank Lorry, ISO Tank, Bulk Vessel"
+    },
+    {
+        "imgUrl" : "./images/content2/product02.jpg",
+        "productName" : "가성소다",
+        "summary" : "셀로판, 합성섬유, 염료의 중간물",
+        "property" : "- 외관 : 무색무취의 점질액체<br>- 분자량 : 40<br>- 비중(20℃) : 1.5(50%), 1.27(25%)<br>- 비점 : 130℃<br>- 융점 : -13℃(12%), -16(25%), 11℃(50%)<br>- 점도(25℃) : 0.802cps<br>- 인화점 : 불연성",
+        "packaging" : "- Tank Lorry"
+    },
+    {
+        "imgUrl" : "./images/content2/product03.jpg",
+        "productName" : "염화메틸",
+        "summary" : "의약, 농약, 발포제, 불연성필름",
+        "property" : "- 특성 : 무색투명의 액화가스, 에테르 냄새가 나는 기체<br>- 분자량 : 50.49<br>- 비중(20℃) : 0.92<br>- 비점 : -23.73℃<br>- 융점 : -97.7℃<br>- 점도 : 0.25cps<br>- 비열(20℃) : 0.382cal/g℃<br>- 폭발한계 : 8 -17.4% (in Air)<br>- 인화점 : 0℃이상<br>- 발화점 : 632℃<br>- 증기압(20℃) : 4.99kg/cm²",
+        "packaging" : "- 940kg Cylinder"
+    },
+    {
+        "imgUrl" : "./images/content2/product04.jpg",
+        "productName" : "염화메틸렌",
+        "summary" : "전자소재 용제(2차전지 소재 등), 의약합성 용제",
+        "property" : "- 특성 : 무색투명의 휘발성 액체로 특이한 자극성 냄새가 남<br>- 분자량 : 84.93<br>- 비중(20℃) : 1.326<br>- 비점(760mmHg) : 40.4℃<br>- 융점 : -96.7℃<br>- 점도(20℃) : 0.441cps<br>- 폭발한계 : 12 -22Vol.% (in Air)<br>- 증기압(20℃) : 0.474kg/cm²<br>- 인화점 : 공기중에서 인화하지 않음",
+        "packaging" : "- Tank Lorry, ISO-Tank, Bulk Vessel"
+    },
+    {
+        "imgUrl" : "./images/content2/product05.jpg",
+        "productName" : "치아염소산소다",
+        "summary" : "표백제, 살균제",
+        "property" : "- 성상 : 염소 냄새가 나는 무색 또는 미색의 액체<br>- 분자량 : 74.44<br>- 비중(20℃) : 1,209<br>- 비점(760mHg) : 40℃<br>- 산성도(pH) : 11",
+        "packaging" : "- Tank Lorry"
+    },
+    {
+        "imgUrl" : "./images/content2/product06.jpg",
+        "productName" : "메타크린",
+        "summary" : "세정 및 발포용제",
+        "property" : "- 특성 : 고세정성, 고안전성, 경제성<br>- 외관 : 무색투명한 휘발성 액체로 특이한 자극적 냄새가 남",
+        "packaging" : "- Steel Drum<br>- Tank Lorry"
+    },
+    {
+        "imgUrl" : "./images/content2/product07.jpg",
+        "productName" : "염산",
+        "summary" : "각종 무기염화물, 화학약품, 표백용, 염색 왕수의 제조",
+        "property" : "- 외관 : 무색 또는 약간의 황색을 띤 발연성 액체<br>- 비중(35% 수용액) : 1.16(20℃)<br>- 비점(35% 수용액) : 100℃<br>- 인화점 : 불연성",
+        "packaging" : "- Tank Lorry"
+    },
+    {
+        "imgUrl" : "./images/content2/product08.jpg",
+        "productName" : "암모니아",
+        "summary" : "질산, 레이온, 나일론, 아크릴로니트릴, 히드라진 등의 원료",
+        "property" : "- 특성 : 무색의 액화 기체로 자극적인 냄새가 남<br>- 분자량 : 17.03<br>- 비중 : 0.612(20℃)<br>- 비점 : -33.35℃<br>- 융점 : -77.7℃<br>- 비열(20℃) : 0.765cal/g·℃<br>- 점도 (-33.35℃) : 0.26cps",
+        "packaging" : "- Tank Lorry<br>- PIPIE LINE 수송<br>- 50kg 고압용기"
+    },
+    {
+        "imgUrl" : "./images/content2/product09.jpg",
+        "productName" : "모노메틸아민",
+        "summary" : "항균제, 농약, 의약, 염료, 계면활성제",
+        "property" : "- 외형 : 무색액체<br>- 분자량 : 31.06<br>- 비중(20℃) : 0.896<br>- 비점 : -6.3℃<br>- 융점 : -93.5℃<br>- 인화점 : -1.2℃(40% 수용액)<br>- 증기압(20℃) :2.8kg/㎠",
+        "packaging" : "- 수용액 : 200L(170kg) Steel Drum 또는 Tank Lorry<br>- 무수물 : Tank Lorry"
+    },
+    {
+        "imgUrl" : "./images/content2/product10.jpg",
+        "productName" : "디메틸아민",
+        "summary" : "고무약품 원료, 제지약품, 수처리계, 경화제, 농약",
+        "property" : "- 외형 : 무색액체<br>- 분자량 : 45.08<br>- 비중(20℃) : 0.659<br>- 비점(760mmHg) : 6.9℃<br>- 융점 : -92.5℃<br>- 인화점 : -16.75℃ (50% 수용액)<br>- 기타 : 물과 알코올에 쉽게 용해",
+        "packaging" : "- 수용액 : 200L(160kg) Steel Drum, Tank Lorry"
+    },
+    {
+        "imgUrl" : "./images/content2/product11.jpg",
+        "productName" : "트리메틸아민",
+        "summary" : "계면활성제, 이온교환수지, 농약",
+        "property" : "- 외형 : 무색액체<br>- 분자량 : 59.13<br>- 비중(20℃) : 0.633<br>- 비점 : 2.9℃<br>- 융점 : -117℃<br>- 인화점 : -1.2℃(30% 수용액)<br>- 증기압(20℃) : 1.83 kg/cm²<br>- 기타 : 물과 알코올에 쉽게 용해",
+        "packaging" : "- TMA 30% 수용액 : Tank Lorry(Min. 10,000Kg)"
+    },
+    {
+        "imgUrl" : "./images/content2/product12.jpg",
+        "productName" : "트리메틸아민-HCl",
+        "summary" : "대전방지제, 전분첨가제",
+        "property" : "- 분자량 : 95.572<br>- 분자량 : 50.49<br>- 비중(25℃) : 1.02<br>- 융점 : 277-278℃",
+        "packaging" : "- 200kg Steel Drum<br>- Tank Lorry"
+    },
+    {
+        "imgUrl" : "./images/content2/product13.jpg",
+        "productName" : "컬러레이저 토너",
+        "summary" : "레이저프린터용 토너",
+        "property" : "- 외관(물리적 상태, 색) : 고체(분말)<br>- 냄새 : 약한 플라스틱 냄새",
+        "packaging" : "- 20kg Paper Box (Black, Yellow, Magenta, Cyan 4가지 색상)"
+    },
+    {
+        "imgUrl" : "./images/content2/product14.jpg",
+        "productName" : "TMAC",
+        "summary" : "TMAH (Tetramethylammonium hydroxide)원료",
+        "property" : "- 형상 : 58% 수용액<br>- 분자량 : 109.62<br>- 비중(℃) : 1.02756<br>- 비점 : 승화<br>- 융점 : 368~370(분해)",
+        "packaging" : "- 200kg power drum"
+    }
+]

@@ -1,0 +1,135 @@
+/* =============== .content_area =============== */
+.content_area > div{
+    margin-bottom: 100px;
+}
+
+
+
+/* =============== .ethics =============== */
+.ethics ul{
+    overflow: hidden;
+}
+
+.ethics ul li:first-child{
+    float: left;
+    width: 47%;
+    padding: 30px;
+    border: 1px solid #aaa;
+    border-top: 5px solid #ED1C24;
+}
+
+.ethics ul li:last-child{
+    float: right;
+    width: 47%;
+    padding: 30px;
+    border: 1px solid #aaa;
+    border-top: 5px solid #ED1C24;
+}
+
+.ethics ul li dl dt{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.ethics ul li dl dt span{
+    color: #ED1C24;
+    margin-right: 15px;
+}
+
+.ethics ul li dl dd{
+    line-height: 2em;
+}
+
+.ethics ul li:first-child dl dd i{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.ethics ul li:last-child dl dd span{
+    display: inline-block;
+    width: 80px;
+}
+
+
+
+/* =============== .register =============== */
+.register .register_comment{
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.register .register_comment span{
+    color: #ED1C24;
+}
+
+.register .email_form{
+    border-top: 5px solid #ED1C24;
+    padding: 30px;
+}
+
+.register .email_form .row{
+    margin-bottom: 40px;
+}
+
+.register .email_form .row .form-group{
+    position: relative;
+}
+
+.register .email_form .row .form-group label{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.register .email_form .row .form-group label span{
+    color: #ED1C24;
+    margin-right: 10px;
+}
+
+.register .email_form .row .form-group input,
+.register .email_form .row .form-group textarea{
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    outline-color: #ED1C24;
+}
+
+.register .email_form .row .form-group textarea{
+    height: 150px;
+    resize: none;
+}
+
+.register .email_form .row .form-group p{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #ED1C24;
+}
+
+.register .email_form .row .send button{
+    background: #ED1C24;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register #success .alert{
+    background: #f2f2f2;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.register #success .alert button{
+    float: right;
+    background: none;
+    border: none;
+    padding: 0 5px;
+    font-size: 24px;
+    cursor: pointer;
+}

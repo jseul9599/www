@@ -1,0 +1,72 @@
+/* =============== .write_title =============== */
+.write_title{
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-top: 3px solid #aaa;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+/* =============== .write_content > .write_form =============== */
+.write_content .write_form{
+    margin-bottom: 30px;
+}
+
+.write_content .write_form #write_row1{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+.write_content .write_form #write_row1 li:nth-child(1){width: 20%; text-align: center;}
+.write_content .write_form #write_row1 li:nth-child(2){width: 60%;}
+.write_content .write_form #write_row1 li:nth-child(3){width: 20%; text-align: right;}
+
+.write_content .write_form #write_row2,
+.write_content .write_form #write_row3{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #aaa;
+}
+
+.write_content .write_form #write_row2 li:nth-child(1),
+.write_content .write_form #write_row3 li:nth-child(1){
+    width: 20%;
+    text-align: center;
+}
+
+.write_content .write_form #write_row2 li:nth-child(2),
+.write_content .write_form #write_row3 li:nth-child(2){
+    width: 80%;
+}
+
+.write_content .write_form #write_row2 li:nth-child(2) input,
+.write_content .write_form #write_row3 li:nth-child(2) textarea{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    outline: none;
+}
+
+
+
+/* =============== .write_content > .write_buttons =============== */
+.write_content .write_buttons{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.write_content .write_buttons button,
+.write_content .write_buttons a{
+    cursor: pointer;
+    background: #aaa;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}

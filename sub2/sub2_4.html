@@ -1,0 +1,105 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품과 기술 - 품질관리</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub2common.css">
+    <link rel="stylesheet" href="./css/sub2_content4.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <p>
+                <span>P</span>
+                <span>R</span>
+                <span>O</span>
+                <span>D</span>
+                <span>U</span>
+                <span>C</span>
+                <span>T</span>
+                <span>&</span>
+                <span>T</span>
+                <span>E</span>
+                <span>C</span>
+                <span>H</span>
+            </p>
+            <h3>제품과 기술</h3>
+        </div>
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub2_1.html">브랜드 스토리</a></li>
+                <li><a href="./sub2_2.html">제품소개</a></li>
+                <li><a href="./sub2_3.html">R&D</a></li>
+                <li class="current"><a href="./sub2_4.html">품질관리</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i>
+                    <span>제품과 기술</span>
+                    <strong>품질관리</strong>
+                </div>
+                <h2>품질관리</h2>
+                <p>롯데정밀화학은 ‘Global Top Tier 품질경쟁력 확보’를 위해 오늘도 최선을 다하고 있습니다</p>
+            </div>
+            <!-- content_area -->
+            <div class="content_area">
+                <div class="quality">
+                    <ul>
+                        <li class="scroll_item">
+                            <div class="quality_text">
+                                <h3>기본과 원칙의 지향</h3>
+                                <ul>
+                                    <li>- 원료 도입부터 시작되는 선행형 품질관리</li>
+                                    <li>- 제품 맞춤형 표준관리</li>
+                                </ul>
+                            </div>
+                            <img src="./images/content4/quality01.jpg" alt="기본과 원칙의 지향">
+                        </li>
+                        <li class="scroll_item">
+                            <div class="quality_text">
+                                <h3>지속적 품질의 개선</h3>
+                                <ul>
+                                    <li>- 시스템과 데이터에 기반한 단계별 공정관리</li>
+                                    <li>- 전사적 혁신활동과 완료형(Closed-Loop) 개선</li>
+                                </ul>
+                            </div>
+                            <img src="./images/content4/quality02.jpg" alt="지속적 품질의 개선">
+                        </li>
+                        <li class="scroll_item">
+                            <div class="quality_text">
+                                <h3>고객지향의 사고</h3>
+                                <ul>
+                                    <li>- 영업, 생산, 품질 전 부문이 연계된 VOC 신속대응</li>
+                                    <li>- 고객 D/B 관리를 통한 품질 책임제 실시</li>
+                                </ul>
+                            </div>
+                            <img src="./images/content4/quality03.jpg" alt="고객지향의 사고">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script src="../common/js/scroll_effect.js"></script>
+
+</body>
+</html>

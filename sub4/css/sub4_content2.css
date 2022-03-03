@@ -1,0 +1,190 @@
+/* =============== .filter_btn_box =============== */
+.filter_btn_box{
+    margin-bottom: 50px;
+}
+
+.filter_btn_box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.filter_btn_box button{
+    float: left;
+    display: block;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #666;
+    border-radius: 30px;
+    margin-right: 20px;
+    font-weight: 700;
+    color: #666;
+    cursor: pointer;
+}
+
+.filter_btn_box .tab{
+    border: 2px solid #ED1C24;
+    color: #ED1C24;
+}
+
+
+
+/* =============== .vid_list =============== */
+.vid_list{
+    margin-bottom: 100px;
+}
+
+.vid_list ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.vid_list ul li{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* position: relative; */
+}
+
+.vid_list ul li:nth-child(3n){
+    margin-right: 0;
+}
+
+.vid_list ul li .vid_thumbnail{
+    width: 360px;
+    height: 200px;
+    position: relative;
+}
+
+.vid_list ul li .vid_thumbnail .play_btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: none;
+    text-align: center;
+    line-height: 200px;
+}
+
+.vid_list ul li .vid_thumbnail .play_btn:hover{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.vid_list ul li .vid_thumbnail .play_btn:hover::before{
+    content: '\f144';
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 50px;
+    color: #fff;
+}
+
+.vid_list ul li .vid_info p{
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.vid_list ul li .vid_info p span{
+    display: block;
+    font-weight: 700;
+    color: #ED1C24;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.vid_list ul li .vid_info p span::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 1px;
+    background: #999;
+}
+
+
+
+/* =============== .overlay =============== */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .85);
+    z-index: 200;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.overlay .vid_box{
+    position: relative;
+    background-color: #fff;
+    width: 800px;
+    height: 430px;
+    margin: 0 auto;
+    top: 50%;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.5) translateY(-50%);
+    transition: all 0.4s;
+}
+
+.overlay .vid_box .close_btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -20%;
+    right: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0;
+    transition: opacity 0.4s, transform 0.4s;
+    transition-delay: 0.3s;
+    
+}
+
+.overlay .vid_box .vid_con{
+    height: 100%;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    transition-delay: 0.3s;
+}
+
+.overlay .vid_box .vid_con iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay.active .vid_box{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(-50%);
+}
+
+.overlay.active .vid_box .vid_con{
+    opacity: 1;
+}
+
+.overlay.active .vid_box .close_btn{
+    opacity: 1;
+    transform: translateY(25px);
+}

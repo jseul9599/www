@@ -1,0 +1,78 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품과 기술 - 제품소개</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub2common.css">
+    <link rel="stylesheet" href="./css/sub2_content2.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+        <div class="visual">
+            <p>
+                <span>P</span>
+                <span>R</span>
+                <span>O</span>
+                <span>D</span>
+                <span>U</span>
+                <span>C</span>
+                <span>T</span>
+                <span>&</span>
+                <span>T</span>
+                <span>E</span>
+                <span>C</span>
+                <span>H</span>
+            </p>
+            <h3>제품과 기술</h3>
+        </div>
+
+        <div class="sub_menu">
+            <ul>
+                <li><a href="./sub2_1.html">브랜드 스토리</a></li>
+                <li class="current"><a href="./sub2_2.html">제품소개</a></li>
+                <li><a href="./sub2_3.html">R&D</a></li>
+                <li><a href="./sub2_4.html">품질관리</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    <i class="fas fa-home"></i>
+                    <span>제품과 기술</span>
+                    <strong>제품소개</strong>
+                </div>
+                <h2>제품소개</h2>
+                <p>증설과 신시장 창출, 원가절감을 통해 국내외 시장에서 경쟁력을 확보하고 있습니다</p>
+            </div>
+            <!-- content_area -->
+            <div class="content_area">
+                <ul class="product"></ul>
+                <div class="overlay">
+                    <div class="product_box">
+                        <a href="#" class="close_btn"><i class="fas fa-times"></i></a>
+                        <div class="product_con"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script src="./js/product.js"></script>
+
+</body>
+</html>
