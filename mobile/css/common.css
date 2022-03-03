@@ -1,0 +1,366 @@
+/* =============== Fonts =============== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap');
+/*
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-weight: 700;
+*/
+
+
+/* =============== CSS Reset =============== */
+* {margin: 0; padding: 0; box-sizing: border-box; -webkit-text-size-adjust: none;}
+html {font-size:14px;}
+body {color:#333; font-family: 'Noto Sans KR', sans-serif;}
+img, fieldset {border: 0; vertical-align: top;}
+ul, ol, li, dl {list-style: none;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal;}
+hr {display: none;}
+a {color: inherit;}
+a, a:link {color: #333; text-decoration: none;}
+a:visited {color: #333;}
+a:hover, a:active {color: #333; text-decoration: none;}
+em, i, address {font-style: normal; font-weight: normal;}
+legend, caption {display: none; clear: both;}
+input, textarea, select, button, table {font-size: inherit; font-family: inherit; line-height: inherit;}
+section, nav, article, aside, hgroup, header, footer {display: block;}
+textarea, input {border-radius: 1px;}
+textarea {resize: none;}
+label {cursor: pointer;}
+table{border-collapse: collapse;}
+
+.hidden,
+#skipNav{display: block; position: absolute; left:-1000%;top:0; width: 1px; height: 1px; overflow: hidden; color: #fff;}
+
+.wrap{width:100%; position: relative;  overflow:hidden;}
+
+/* =============== Variables =============== */
+:root {
+    --main-color : #ED1C24;
+    --sub-color : #f5f5f5;
+    --title-font : 1.5rem;
+}
+
+
+
+/* =============== #headerArea =============== */
+#headerArea{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 15px;
+    z-index: 100;
+}
+
+#headerArea .menu_top{
+    overflow: hidden;
+}
+
+#headerArea .menu_top h1{
+    width: 121px;
+    height: 40px;
+    float: left;
+}
+
+#headerArea .menu_top h1 a{
+    text-indent: -999px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/logo_white.png);
+    background-repeat: no-repeat;
+    background-size: 120px 40px;
+    background-position: center;
+}
+
+#headerArea .menu_top .menu_btn{
+    float: right;
+    width: 30px;
+    height: 40px;
+    position: relative;
+    z-index: 200;
+}
+
+#headerArea .menu_top .menu_btn span{
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+}
+
+#headerArea .menu_top .menu_btn span::before,
+#headerArea .menu_top .menu_btn span::after{
+    content: '';
+    background: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    transition: transform .3s;
+}
+
+#headerArea .menu_top .menu_btn span::before{
+    top: -10px;
+}
+
+#headerArea .menu_top .menu_btn span::after{
+    top: 10px;
+}
+
+#headerArea #gnb{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: .3s;
+}
+
+#headerArea #gnb .lang{
+    margin: 40px 0 20px;
+    padding-left: 2rem;
+}
+
+#headerArea #gnb .lang a{
+    display: inline-block;
+    padding: .5rem;
+}
+
+#headerArea #gnb .lang a.current{
+    font-weight: 700;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+#headerArea #gnb ul li h3 a{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+#headerArea #gnb ul li h3 a::after{
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+#headerArea #gnb ul li ul{
+    background: var(--sub-color);
+    display: none;
+}
+
+#headerArea #gnb ul li ul li a{
+    display: block;
+    font-size: 1.1rem;
+    padding: .7rem 3rem;
+}
+
+#headerArea #gnb .menu_member{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+#headerArea #gnb .menu_member ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#headerArea #gnb .menu_member ul li{
+    border: 1px solid #ED1C24;
+    padding: 5px 10px;
+}
+
+#headerArea #gnb .menu_member ul li a{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ED1C24;
+}
+
+#headerArea #gnb .menu_member .login_msg{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* === #headerArea.header-active === */
+#headerArea.header-active{
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+}
+
+#headerArea.header-active .menu_top h1 a{
+    background-image: url(../images/logo_red.png);
+}
+
+#headerArea.header-active .menu_top .menu_btn span,
+#headerArea.header-active .menu_top .menu_btn span::before,
+#headerArea.header-active .menu_top .menu_btn span::after{
+    background: #333;
+}
+
+#headerArea.header-active .menu_top .menu_btn.menu-active span{
+    background: transparent;
+}
+
+/* === .menu_btn.menu-active === */
+#headerArea .menu_top .menu_btn.menu-active span{
+    background: transparent;
+}
+
+#headerArea .menu_top .menu_btn.menu-active span::before{
+    top: 0;
+    transform: rotate(45deg);
+    background: #333;
+}
+
+#headerArea .menu_top .menu_btn.menu-active span::after{
+    top: 0;
+    transform: rotate(-45deg);
+    background: #333;
+}
+
+/* === #gnb ul li.active === */
+#headerArea #gnb ul li.active h3 a::after{
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+/* === @media screen === */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #headerArea .menu_top h1 a{
+        background-image: url(../images/logo_white_x2.png);
+    }
+
+    #headerArea.header-active .menu_top h1 a{
+        background-image: url(../images/logo_red_x2.png);
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+    #headerArea .menu_top h1 a{
+        background-image: url(../images/logo_white_x3.png);
+    }
+
+    #headerArea.header-active .menu_top h1 a{
+        background-image: url(../images/logo_red_x3.png);
+    }
+}
+
+
+
+/* =============== #footerArea =============== */
+#footerArea{
+    background: #231F20;
+    color: #fff;
+    font-size: .85rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+#footerArea .footer_logo{
+    width: 121px;
+    height: 30px;
+    margin: 0 auto 20px;
+    background-image: url(../images/footer_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#footerArea address{
+    margin-bottom: 20px;
+}
+
+#footerArea address a{
+    display: block;
+    color: #fff;
+}
+
+#footerArea p{
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#footerArea .pc_btn{
+    display: block;
+    color: #fff;
+    background: #4a4a4a;
+    padding: 15px;
+}
+
+/* === @media screen === */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    #footerArea .footer_logo{
+        background-image: url(../images/footer_logo_x2.png);
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+    #footerArea .footer_logo{
+        background-image: url(../images/footer_logo_x3.png);
+    }
+}
+
+
+/* =============== Back to Top =============== */
+.topMove{
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 20;
+}
+  
+  .topMove::after{
+    content: '\f106';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 35px;
+    color: #333;
+}
+  
+  .topMove span{
+    background: var(--main-color);
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 35px;
+    overflow: hidden;
+    transition: .1s linear;
+}

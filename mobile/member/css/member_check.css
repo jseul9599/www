@@ -1,0 +1,107 @@
+body{
+    background-color: #f5f5f5;
+}
+
+header{
+    margin-top: 30px;
+}
+
+header h1 a{
+    display: block;
+    width: 142px;
+    height: 44px;
+    margin: 0 auto;
+    background: url(../images/logo_red.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+#content{
+    width: auto;
+    margin: 30px 15px 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#content h2{
+    font-size: var(--title-font);
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#content h2::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 5px;
+    height: 80%;
+    background: var(--main-color);
+}
+
+#content .join h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#content .join .policy{
+    padding: 10px;
+    height: 100px;
+    border: 1px solid #aaa;
+    background-color: #f5f5f5;
+    overflow-y: scroll;
+}
+
+#content .join .check{
+    margin: 10px 0 40px;
+}
+
+#content .join .check input[type=checkbox]{
+    display: none;
+}
+
+#content .join .check label{
+    cursor: pointer;
+}
+
+#content .join .check label::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#content .join .check input[type=checkbox]:checked + label::before{
+    background-color: #ED1C24;
+}
+
+#content .join .buttons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content .join .buttons button{
+    cursor: pointer;
+    width: 32%;
+    padding: 10px 0;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+#content .join .buttons .allcheck,
+#content .join .buttons .check_agree{
+    background-color: #ED1C24;
+}
+
+#content .join .buttons .cancel{
+    background-color: #aaa;
+}

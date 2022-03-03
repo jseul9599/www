@@ -1,0 +1,198 @@
+/* =============== .content_area =============== */
+.content_area{
+    padding: 0 15px;
+}
+
+.content_area > div{
+    margin-bottom: 50px;
+}
+
+
+
+/* =============== sub4_1 =============== */
+.filter_btn_box {
+    margin-bottom: 50px;
+}
+
+.filter_btn_box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.filter_btn_box button{
+    background: transparent;
+    border: 1px solid #666;
+    border-radius: 10px;
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: .5rem 0;
+    font-size: 1.15rem;
+}
+
+.filter_btn_box button:nth-child(even){
+    margin-right: 0;
+}
+
+.filter_btn_box .tab{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.vid_list ul li{
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.vid_list ul li .vid_thumbnail{
+    position: relative;
+}
+
+.vid_list ul li .vid_thumbnail .play_btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.vid_list ul li .vid_thumbnail .play_btn::before{
+    content: '\f144';
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vid_list ul li .vid_info p{
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 3% 0;
+    text-align: center;
+}
+
+.vid_list ul li .vid_info p span{
+    display: block;
+    font-weight: 700;
+    color: var(--main-color);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.vid_list ul li .vid_info p span::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 1px;
+    background: #999;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 200;
+    display: none;
+}
+
+.overlay .vid_box{
+    position: relative;
+    top: 0;
+    background: #fff;
+    padding: 30%;
+}
+
+.overlay .vid_box .close_btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 45px;
+}
+
+.overlay .vid_box .vid_con{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+.overlay .vid_box .vid_con iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.overlay.active{
+    display: block;
+    opacity: 1;
+}
+
+
+
+/* =============== sub4_2 =============== */
+.content_area div h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.content_area div h3::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 5px;
+    height: 80%;
+    background: #ED1C24;
+}
+
+.content_area div table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.content_area div table thead tr th{
+    background: #ED1C24;
+    color: #fff;
+    padding: 1rem;
+}
+
+.content_area div table thead tr th:first-child{
+    width: 30%;
+}
+
+.content_area div table tbody tr td{
+    border-bottom: 1px solid #aaa;
+    padding: .5rem;
+}
+
+.content_area div table tbody tr td:first-child{
+    background: var(--sub-color);
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+}

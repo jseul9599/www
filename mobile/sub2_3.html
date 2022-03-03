@@ -1,0 +1,100 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>제품과 기술 - 품질관리</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual">
+            <h3></h3>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2></h2>
+            </div>
+            <!-- content_area -->
+            <div class="content_area">
+                <div class="quality">
+                    <ul>
+                        <li>
+                            <div class="quality_text">
+                                <h3>기본과 원칙의 지향</h3>
+                                <ul>
+                                    <li>- 원료 도입부터 시작되는 선행형 품질관리</li>
+                                    <li>- 제품 맞춤형 표준관리</li>
+                                </ul>
+                            </div>
+                            <img src="./images/sub2_3/quality01.jpg" alt="기본과 원칙의 지향">
+                        </li>
+                        <li>
+                            <div class="quality_text">
+                                <h3>지속적 품질의 개선</h3>
+                                <ul>
+                                    <li>- 시스템과 데이터에 기반한 단계별 공정관리</li>
+                                    <li>- 전사적 혁신활동과 완료형(Closed-Loop) 개선</li>
+                                </ul>
+                            </div>
+                            <img src="./images/sub2_3/quality02.jpg" alt="지속적 품질의 개선">
+                        </li>
+                        <li>
+                            <div class="quality_text">
+                                <h3>고객지향의 사고</h3>
+                                <ul>
+                                    <li>- 영업, 생산, 품질 전 부문이 연계된 VOC 신속대응</li>
+                                    <li>- 고객 D/B 관리를 통한 품질 책임제 실시</li>
+                                </ul>
+                            </div>
+                            <img src="./images/sub2_3/quality03.jpg" alt="고객지향의 사고">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_common.js"></script>
+    
+</body>
+</html>

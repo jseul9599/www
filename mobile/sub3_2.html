@@ -1,0 +1,111 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>지속가능경영 - 사회공헌</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual">
+            <h3></h3>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2></h2>
+            </div>
+            <!-- content_area -->
+            <div class="content_area">
+                <div class="category">
+                    <h3 class="hidden">사회공헌 추진영역</h3>
+                    <ul>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Dream</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>아동·청소년과 미혼모 가족의 꿈을 응원하고, 안정적인 삶을 영위하도록 다양한 지원활동을 펼치고 있습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Society</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>도움의 손길이 필요한 이웃과의 소중한 나눔활동을 통해 지역사회와의 상생을 도모하고 있습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Eco</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>지속가능한 자연환경을 보전하기 위해 기후변화 대응활동과 녹색환경 캠페인을 전개하고 있습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Chemi</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>미래 화학산업을 이끌어갈 인재육성을 지원하고, 회사 제품과 기술을 접목한 나눔활동을 통해 업(業)과 연계한 사회공헌활동을 펼치고 있습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Synergy</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>롯데그룹사 및 지자체, 지역 사회공헌기관과의 협력을 통해 상생과 나눔의 가치를 더하고 있습니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_common.js"></script>
+    
+</body>
+</html>

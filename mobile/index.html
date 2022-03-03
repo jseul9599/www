@@ -1,0 +1,234 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>LOTTE FINE CHEMICAL</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="./js/prefixfree.min.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual swiper mySwiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide" style="background-image: url(./images/main/visual01.jpg);">
+                    <p>
+                        World-Leading<br>Specialty Chemical Company
+                        <span>환경과의 조화를 생각하는 회사</span>
+                    </p>
+                </li>
+                <li class="swiper-slide" style="background-image: url(./images/main/visual02.jpg);">
+                    <p>
+                        Highest Quality Chemicals<br>Most Trusted Partner
+                        <span>품질을 최우선으로 여기는 회사</span>
+                    </p>
+                </li>
+                <li class="swiper-slide" style="background-image: url(./images/main/visual03.jpg);">
+                    <p>
+                        Better Life with<br>Lotte Fine Chemical
+                        <span>인간의 미래를 건강하게 만드는 회사</span>
+                    </p>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <article id="content">
+            <h2 class="hidden">본문콘텐츠영역</h2>
+            <!-- company -->
+            <section class="company">
+                <div class="title_box">
+                    <h3>Why <span>LOTTE</span> FINE CHEMICAL</h3>
+                </div>
+                <ul>
+                    <li>
+                        <div class="icon"></div>
+                        <dl>
+                            <dt>기술력 기반</dt>
+                            <dd>일반화학 사업에서 출발해 기술력 기반의 스페셜티 케미칼 전문기업으로 사업기반을 넓혀가고 있습니다.</dd>
+                        </dl>
+                        
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <dl>
+                            <dt>글로벌 경쟁력</dt>
+                            <dd>내부 효율화를 성공적으로 마무리하며 글로벌 경쟁력을 키워나가는데 주력하고 있습니다.</dd>
+                        </dl>
+                        
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <dl>
+                            <dt>수익력 창출 확대</dt>
+                            <dd>안전환경 체질화를 기반으로 글로벌 제조경쟁력 일류화를 위한 변화와 혁신활동을 추진하고 있습니다.</dd>
+                        </dl>
+                        
+                    </li>
+                </ul>
+            </section>
+            <!-- product -->
+            <section class="product">
+                <div class="title_box">
+                    <h3>Brand Story</h3>
+                </div>
+                <div class="product_con swiper mySwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="./images/main/product01.jpg" alt="MECELLOSE®">
+                            <a href="./sub2_1.html">
+                                <dl>
+                                    <dt>MECELLOSE®</dt>
+                                    <dd>시멘트용 첨가제</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./images/main/product02.jpg" alt="HECELLOSE®">
+                            <a href="./sub2_1.html">
+                                <dl>
+                                    <dt>HECELLOSE®</dt>
+                                    <dd>페인트용 첨가제</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./images/main/product03.jpg" alt="AnyCoat®">
+                            <a href="./sub2_1.html">
+                                <dl>
+                                    <dt>AnyCoat®</dt>
+                                    <dd>의약용 캡슐원료</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./images/main/product04.jpg" alt="AnyAddy®">
+                            <a href="./sub2_1.html">
+                                <dl>
+                                    <dt>AnyAddy®</dt>
+                                    <dd>식품용 첨가제</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="./images/main/product05.jpg" alt="EUROX®">
+                            <a href="./sub2_1.html">
+                                <dl>
+                                    <dt>EUROX®</dt>
+                                    <dd>질소산화물저감제</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="scroll_bar swiper-pagination"></div>
+                </div>
+            </section>
+            <!-- management -->
+            <section class="management">
+                <div class="title_box">
+                    <h3>Corporate Social Responsibility</h3>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./images/main/management01.jpg" alt="Fine Dream">
+                        <p>Fine Dream</p>
+                    </li>
+                    <li>
+                        <img src="./images/main/management02.jpg" alt="Fine Society">
+                        <p>Fine Society</p>
+                    </li>
+                    <li>
+                        <img src="./images/main/management03.jpg" alt="Fine Eco">
+                        <p>Fine Eco</p>
+                    </li>
+                    <li>
+                        <a href="./sub3_2.html">
+                            <img src="./images/main/management04.jpg" alt="view more">
+                            <p>더 보기</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- prcenter -->
+            <section class="prcenter">
+                <div class="title_box">
+                    <h3>PR Center</h3>
+                </div>
+                <div class="pr_vid">
+                    <video controls poster="./images/main/prvid.jpg">
+                        <source src="./images/main/eurox.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </div>
+                <a href="./sub4_1.html" class="more">더 많은 영상 보러가기</a>
+            </section>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Swiper -->
+    <script>
+
+        var swiper = new Swiper(".visual", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        var swiper = new Swiper(".product_con", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+      </script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/main.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* =============== .visual =============== */
+.visual{
+    width: 100%;
+    height: 100vh;
+}
+
+.visual ul li{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+
+.visual ul li p{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0, 0, 0, .5);
+}
+
+.visual ul li p span{
+    display: block;
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: .5rem;
+}
+
+.visual span.swiper-pagination-bullet{
+    width: .65rem;
+    height: .65rem;
+}
+
+.visual .swiper-pagination-bullet-active{
+    background: #fff;
+}
+
+
+
+/* =============== #content Common =============== */
+#content img{
+    width: 100%;
+}
+
+#content section{
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+#content section .title_box{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#content section .title_box h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#content section .title_box h3 span{
+    color: var(--main-color);
+}
+
+
+
+/* =============== #content .company =============== */
+.company ul li{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.company ul li .icon{
+    width: 15%;
+    float: left;
+}
+
+.company ul li .icon svg{
+    width: 100%;
+    fill: transparent;
+    stroke: var(--main-color);
+    stroke-width: 20;
+    padding-top: .3rem;
+}
+
+.company ul li .icon svg path{
+    stroke-dasharray: 2000;
+}
+
+.company ul li dl{
+    width: 80%;
+    float: right;
+}
+
+.company ul li dl dt{
+    font-weight: 700;
+    margin-bottom: .25rem;
+}
+
+
+
+/* =============== #content .product =============== */
+#content .product{
+    background: var(--sub-color);
+    padding: 30px 15px;
+}
+
+.product ul li img{
+    border-radius: 15px 15px 0 0;
+}
+
+.product ul li a{
+    display: block;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+}
+
+.product ul li a dl dt{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: .25rem;
+}
+
+.product ul li:nth-child(1) a dl dt{color: #45a848;}
+.product ul li:nth-child(2) a dl dt{color: #2599c8;}
+.product ul li:nth-child(3) a dl dt{color: #35ab85;}
+.product ul li:nth-child(4) a dl dt{color: #0d4da3;}
+.product ul li:nth-child(5) a dl dt{color: #00235d;}
+
+.product .product_con .swiper-pagination{
+    position: static;
+    margin: 10px auto 0;
+}
+
+.product .product_con .swiper-pagination .swiper-pagination-bullet-active{
+    background: var(--main-color);
+}
+
+
+
+/* =============== #content .management =============== */
+.management ul{
+    overflow: hidden;
+}
+
+.management ul li{
+    float: left;
+    width: calc(50% - 7.5px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.management ul li:nth-child(even){
+    margin-right: 0;
+}
+
+.management ul li::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.management ul li img{
+    border-radius: 15px;
+}
+
+.management ul li p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.management ul li:nth-child(4) a{
+    display: block;
+}
+
+.management ul li:nth-child(4) a p{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+/* =============== #content .prcenter =============== */
+.prcenter{
+    margin-bottom: 50px;
+}
+
+.prcenter .pr_vid{
+    width: 100%;
+}
+
+.prcenter .pr_vid video{
+    width: 100%;
+}
+
+.prcenter .more{
+    display: block;
+    width: 70%;
+    padding: .65rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    background: var(--main-color);
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: 700;
+}

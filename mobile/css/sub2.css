@@ -1,0 +1,111 @@
+/* =============== .content_area =============== */
+.content_area{
+    padding: 0 15px;
+}
+
+.content_area > div{
+    margin-bottom: 50px;
+}
+
+
+
+/* =============== sub2_1 =============== */
+.brand ul li{
+    margin-bottom: 50px;
+}
+
+.brand ul li .brand_text h3{
+    font-size: var(--title-font);
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.brand ul li:nth-child(1) .brand_text h3{color: #45a848;}
+.brand ul li:nth-child(2) .brand_text h3{color: #2599c8;}
+.brand ul li:nth-child(3) .brand_text h3{color: #35ab85;}
+.brand ul li:nth-child(4) .brand_text h3{color: #0d4da3;}
+.brand ul li:nth-child(5) .brand_text h3{color: #00235d;}
+
+.brand ul li .brand_text dl dt{
+    font-weight: 700;
+    color: #aaa;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5rem;
+}
+
+
+
+/* =============== sub2_2 =============== */
+.rnd ul li{
+    margin-bottom: 50px;
+}
+
+.rnd ul li .rnd_text h3{
+    font-size: var(--title-font);
+    font-weight: 700;
+    padding-top: 30px;
+    margin-bottom: .5rem;
+    position: relative;
+}
+
+.rnd ul li .rnd_text h3::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #eee;
+    z-index: -1;
+    font-size: 2.5rem;
+}
+
+.rnd ul li:nth-child(1) .rnd_text h3::before{content: '01';}
+.rnd ul li:nth-child(2) .rnd_text h3::before{content: '02';}
+.rnd ul li:nth-child(3) .rnd_text h3::before{content: '03';}
+
+.rnd ul li .rnd_text dt{
+    display: block;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+
+.rnd ul li .rnd_text dd{
+    text-align: justify;
+}
+
+
+
+/* =============== sub2_3 =============== */
+.quality > ul > li{
+    margin-bottom: 50px;
+}
+
+.quality > ul > li:first-child{
+    padding-top: 0;
+}
+
+.quality > ul > li:last-child{
+    border-bottom: none;
+}
+
+.quality ul li .quality_text{
+    margin-bottom: 1rem;
+}
+
+.quality ul li .quality_text h3{
+    font-size: var(--title-font);
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.quality ul li .quality_text h3::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 5px;
+    height: 80%;
+    background: var(--main-color);
+}

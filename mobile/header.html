@@ -1,0 +1,69 @@
+<header id="headerArea">
+    <div class="menu_top">
+        <h1><a href="./index.html">롯데정밀화학</a></h1>
+        <a href="#" class="menu_btn"><span></span></a>
+    </div>
+    <nav id="gnb">
+        <h2 class="hidden">글로벌네비게이션영역</h2>
+        <div class="lang">
+            <a href="./index.html" class="current">KR</a>
+            <a href="#">EN</a>
+        </div>
+        <ul>
+            <li>
+                <h3><a href="./sub1_1.html">회사소개</a></h3>
+                <ul>
+                    <li><a href="./sub1_1.html">회사현황</a></li>
+                    <li><a href="./sub1_2.html">연혁</a></li>
+                    <li><a href="./sub1_3.html">사업장 안내</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3><a href="./sub2_1.html">제품과 기술</a></h3>
+                <ul>
+                    <li><a href="./sub2_1.html">브랜드 스토리</a></li>
+                    <li><a href="./sub2_2.html">R&D</a></li>
+                    <li><a href="./sub2_3.html">품질관리</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3><a href="./sub3_1.html">지속가능경영</a></h3>
+                <ul>
+                    <li><a href="./sub3_1.html">안전환경경영</a></li>
+                    <li><a href="./sub3_2.html">사회공헌</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3><a href="./sub4_1.html">홍보센터</a></h3>
+                <ul>
+                    <li><a href="./sub4_1.html">PR자료실</a></li>
+                    <li><a href="./sub4_2.html">담당자 안내</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="menu_member">
+            <?
+                if(!$userid){
+            ?>
+
+            <ul>
+                <li><a href="./login/login_form.php">로그인</a></li>
+                <li><a href="./member/member_check.html">회원가입</a></li>
+            </ul>
+
+            <?
+                }else{
+            ?>
+
+            <p class="login_msg"><strong><?=$usernick?></strong>님 반갑습니다.</li>
+            <ul>
+                <li><a href="./login/logout.php">로그아웃</a></li>
+                <li><a href="./member/member_form_modify.php">정보수정</a></li>
+            </ul>
+
+            <?
+                }
+            ?>
+        </div>
+    </nav>
+</header>

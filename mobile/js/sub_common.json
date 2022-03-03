@@ -1,0 +1,56 @@
+[
+    {
+        "title" : "회사소개",
+        "sub" : [
+            {
+                "title" : "회사현황"
+            },
+            {
+                "title" : "연혁"
+            },
+            {
+                "title" : "사업장 안내"
+            }
+        ],
+        "visualImg" : "sub1_visual.jpg"
+    },
+    {
+        "title" : "제품과 기술",
+        "sub" : [
+            {
+                "title" : "브랜드 스토리"
+            },
+            {
+                "title" : "R&D"
+            },
+            {
+                "title" : "품질관리"
+            }
+        ],
+        "visualImg" : "sub2_visual.jpg"
+    },
+    {
+        "title" : "지속가능경영",
+        "sub" : [
+            {
+                "title" : "안전환경경영"
+            },
+            {
+                "title" : "사회공헌"
+            }
+        ],
+        "visualImg" : "sub3_visual.jpg"
+    },
+    {
+        "title" : "홍보센터",
+        "sub" : [
+            {
+                "title" : "PR자료실"
+            },
+            {
+                "title" : "담당자 안내"
+            }
+        ],
+        "visualImg" : "sub4_visual.jpg"
+    }
+]
