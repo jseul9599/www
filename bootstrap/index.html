@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Häagen-Dazs</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script>
+        // <![CDATA[
+            try {
+                window.addEventListener('load', function(){
+                    setTimeout(scrollTo, 0, 0, 1); 
+                }, false);
+            } catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <div id="skipNav">
+        <a href="#content">Skip to main content</a>
+		<a href="#gnb">Skip to navigation</a>
+    </div>
+
+    <header id="headerArea">
+        <h1 class="hidden">Häagen-Dazs</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <h2 class="hidden">Navigation</h2>
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="./images/logo.png" class="img-fluid" alt="Häagen-Dazs logo"></a>
+                <div class="nav_btns">
+                    <button class="cart_open text-white" type="button">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>0</span>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="ti-align-justify navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <h3 class="mb-0"><a class="nav-link px-3" href="#about">About</a></h3>
+                        </li>
+                        <li class="nav-item">
+                            <h3 class="mb-0"><a class="nav-link px-3" href="#products">Products</a></h3>
+                        </li>
+                        <li class="nav-item">
+                            <h3 class="mb-0"><a class="nav-link px-3" href="#event">Event</a></h3>
+                        </li>
+                        <li class="nav-item">
+                            <h3 class="mb-0"><a class="nav-link px-3" href="#gallery">Gallery</a></h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart_container col-12 col-md-6 col-lg-5 col-xxl-4">
+        <div class="container">
+            <div class="row">
+                <div class="cart_header px-4 py-2 d-flex justify-content-between">
+                    <p>CART</p>
+                    <a href="#" class="cart_close"><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="cart_list px-4"></ul>
+            </div>
+            <div class="row">
+                <div class="cart_footer px-4 py-5">
+                    <p>Total : <span class="total_price">£ 0.00</span></p>
+                    <a href="#" class="checkout">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_visual">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/visual01.jpg" alt="visual image">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/visual02.jpg" alt="visual image">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/visual03.jpg" alt="visual image">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <article id="content">
+        <h2 class="hidden">Main content</h2>
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about_con col-lg-5">
+                        <div class="title_box">
+                            <h3>About <span>Häagen-Dazs®</span></h3>
+                        </div>
+                        <p>The Häagen-Dazs® brand was invented by two immigrant entrepreneurs 
+                            with a vision. They used their creativity, sense of playfulness, 
+                            and a totally made-up name to create an iconic luxury brand. By 
+                            transforming the finest ingredients into rich and indulgent ice 
+                            cream, they created the first luxury ice cream that could be enjoyed 
+                            by all. Inspired by the passion and creativity of our founders, we’re 
+                            tapping into a new generation of diverse tastemakers to share their 
+                            own personal definitions of luxury and let their individuality shine. 
+                        </p>
+                        <p class="d-none d-xl-block">
+                            To us, luxury is something that should be enjoyed by the many instead 
+                            of the few. It shouldn’t be narrow and exclusive - it should be sprawling 
+                            and everchanging and ever-inspiring. Because whatever luxury means to you - 
+                            That’s Dazs.
+                        </p>
+                    </div>
+                    <div class="about_img col-lg-6 offset-lg-1">
+                        <div class="row mb-4">
+                            <img src="./images/about01.jpg" class="col-sm-6" alt="">
+                            <img src="./images/about02.jpg" class="col-sm-6" alt="">
+                        </div>
+                        <div class="row">
+                            <img src="./images/about03.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- products -->
+        <section class="products" id="products">
+            <div class="container">
+                <div class="row">
+                    <div class="title_box text-center">
+                        <h3>Products</h3>
+                        <p>Every one of our ice creams is sourced from the finest ingredients we can find, wherever we can find them, from Brazil to Brooklyn.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="nav nav-tabs">
+                        <button type="butotn" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-pints">Pints</button>
+                        <button type="butotn" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-bars">Bars</button>
+                        <button type="butotn" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-multipacks">Multipacks</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane pane active show fade" id="tab-pints">
+                            <div class="row mx-0 category_pints"></div>
+                        </div>
+                        <div class="tab-pane pane fade" id="tab-bars">
+                            <div class="row mx-0 category_bars"></div>
+                        </div>
+                        <div class="tab-pane pane fade" id="tab-multipacks">
+                            <div class="row mx-0 category_multipacks"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- event -->
+        <section class="event" id="event">
+            <div class="container">
+                <div class="row">
+                    <div class="title_box text-center text-white">
+                        <h3 class="fw-bold">Special Offer Of The Week</h3>
+                        <p class="event_notice">Offer ends on</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="countdown_box d-flex justify-content-center align-items-center">
+                        <li class="mx-3"><span>03</span>Days</li>
+                        <li class="mx-3"><span>00</span>Hours</li>
+                        <li class="mx-3"><span>00</span>Mins</li>
+                        <li class="mx-3"><span>00</span>Secs</li>
+                    </ul>
+                </div>
+                <div class="row mt-5">
+                    <a href="#" class="shop_now text-center py-3 m-auto">SHOP NOW</a>
+                </div>
+            </div>
+        </section>
+        <!-- gallery -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="title_box text-center">
+                        <h3>Gallery</h3>
+                        <p>Find luxury where you are #ThatsDazs</p>
+                    </div>
+                </div>
+                <div class="row gy-4 row-cols-2 row-cols-md-4 row-cols-lg-5">
+                    <div class="col gallery_item">
+                        <div><img src="./images/gallery01.jpg" alt="gallery image"></div>                        
+                    </div>
+                    <div class="col gallery_item">
+                        <div><img src="./images/gallery02.jpg" alt="gallery image"></div>                        
+                    </div>
+                    <div class="col gallery_item">
+                        <div><img src="./images/gallery03.jpg" alt="gallery image"></div>                        
+                    </div>
+                    <div class="col gallery_item">
+                        <div><img src="./images/gallery04.jpg" alt="gallery image"></div>                        
+                    </div>
+                    <div class="col gallery_item">
+                        <div><img src="./images/gallery05.jpg" alt="gallery image"></div>                        
+                    </div>
+                    <div class="col gallery_item">
+                        <div><img src="./images/gallery06.jpg" alt="gallery image"></div>                        
+                    </div>
+                    <div class="col gallery_item d-none d-md-block">
+                        <div><img src="./images/gallery07.jpg" alt="gallery image"></div>                        
+                    </div>
+                    <div class="col gallery_item d-none d-md-block">
+                        <div><img src="./images/gallery08.jpg" alt="gallery image"></div>                        
+                    </div>
+                    <div class="col gallery_item d-none d-lg-block">
+                        <div><img src="./images/gallery09.jpg" alt="gallery image"></div>                        
+                    </div>
+                    <div class="col gallery_item d-none d-lg-block">
+                        <div><img src="./images/gallery10.jpg" alt="gallery image"></div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="gallery_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title" id="exampleModalLabel">Gallery Image</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./images/gallery01.jpg" alt="gallery image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer id="footerArea" class="d-flex flex-column align-items-center py-5">
+        <a class="topMove" href="#"><span>TOP</span></a>
+        <div class="footer_logo mb-4"></div>
+        <ul class="d-flex justify-content-center text-white mb-1 px-0">
+            <li class="mx-2"><strong>PRIVACY</strong></li>
+            <li class="mx-2"><strong>ACCESSIBILITY</strong></li>
+            <li class="mx-2"><strong>CONTACT US</strong></li>
+        </ul>
+        <p class="text-white text-center">Häagen-Dazs is a trademark of HDIP, Inc.; used by permission.</p>
+    </footer>
+
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main_data.js"></script>
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
