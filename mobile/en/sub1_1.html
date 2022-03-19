@@ -1,0 +1,115 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>Company - Overview</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">Skip to main content</a>
+        <a href="#gnb">Skip to navigation</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual">
+            <h3></h3>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2></h2>
+            </div>
+            <!-- content_area -->
+            <div class="content_area sub1_1">
+                <div class="greeting">
+                    <img src="./images/sub1_1/greeting.jpg" alt="회사 이미지">
+                    <div class="intro">
+                        <p>
+                            First and foremost,<br>
+                            we would like to extend our sincere gratitude to those who have expressed their unchanging care and support to Lotte Fine Chemical.
+                            <span>Lotte Fine Chemical CEO</span>
+                            Woo-Chan KIM
+                        </p>
+                    </div>
+                </div>
+                <div class="greeting_text">
+                    <p>
+                        Thank you for visiting the LOTTE Fine Chemical website.
+                    </p>
+                    <p>
+                        Established in 1964, LOTTE Fine Chemical (LFC) has been keeping pace with 
+                        the development of chemical industry in Korea since its founding. The company 
+                        began in the general chemicals business, the foundation of the chemical industry, 
+                        and then expanded into higher added value businesses, such as fine chemicals. 
+                        These include AnyCoat®, a material for pharmaceutical capsules, and MECELLOSE®, 
+                        a functional additive for construction. LFC also manufactures electronic materials, 
+                        including tetramethyl ammonium hydroxide (TMAC), a material for semiconductors, and 
+                        color laser printer toners. As such, LFC continues to expand its business areas and 
+                        technological prowess as a specialty chemical company.
+                    </p>
+                    <p>
+                        Economic fluctuations in Korea and abroad, including the international financial 
+                        crisis, substantial domestic household debt, and a faltering manufacturing industry, 
+                        have contributed to growing uncertainties in our business environment. Notwithstanding 
+                        this, however, LFC has successfully completed its business restructuring, and improved 
+                        internal efficiency, turning obstacles into opportunities. Leveraging the skills and 
+                        experience built up over the last 50 years, LFC is now concentrating on bolstering its 
+                        global competitiveness through innovation and creativity.
+                    </p>
+                    <p>
+                        In the area of R&D, LFC is developing new uses for its products, and expanding research 
+                        infrastructure to offer top-quality technology services to customers. We are also 
+                        building world-leading production competitiveness while focusing on safety management. 
+                        Our ‘creative partnership’, and the efforts of everyone at LFC to improve profitability 
+                        and secure future growth drivers, are aimed at providing better products and services to 
+                        all our customers.
+                    </p>
+                    <p>
+                        In addition, we will continue to strengthen our cooperative relationships with customers, 
+                        partners, and local communities, to fulfill our responsibilities as a company that grows 
+                        in partnership with all our stakeholders.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_common.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,177 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>Company - History</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">Skip to main content</a>
+        <a href="#gnb">Skip to navigation</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual">
+            <h3></h3>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2></h2>
+            </div>
+            <!-- content_area -->
+            <div class="content_area sub1_2">
+                <div class="history">
+                    <div class="circle"></div>
+                    <ul>
+                        <li class="scroll_item">
+                            <h3>2019</h3>
+                            <img src="./images/sub1_2/history02.jpg" alt="AnyCoat® plant D built">
+                            <div class="history_text">
+                                <dl>
+                                    <dt>Dec</dt>
+                                    <dd>- Selection of leisure-friendly companies</dd>
+                                    <dd>- Selection of recognized community contribution companies</dd>
+                                    <dd>- Winning $600 million Export Tower</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Apr</dt>
+                                    <dd>- AnyCoat® plant D built</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="scroll_item">
+                            <h3>2012</h3>
+                            <img src="./images/sub1_2/history03.jpg" alt="Color laser printer toner plant B built">
+                            <div class="history_text">
+                                <dl>
+                                    <dt>Nov</dt>
+                                    <dd>- AnyCoat® plant C built</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Oct</dt>
+                                    <dd>- Increased production of HECELLOSE® plant</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Sep</dt>
+                                    <dd>- Ammonia storage tank No. 6 built</dd>
+                                    <dd>- MECELLOSE plant F built</dd>
+                                    <dd>- Color laser printer toner plant B built</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="scroll_item">
+                            <h3>2011</h3>
+                            <img src="./images/sub1_2/history04.jpg" alt="S-EnPol, a bio-degradable plastic joint venture, established">
+                            <div class="history_text">
+                                <dl>
+                                    <dt>Oct</dt>
+                                    <dd>- HECELLOSE® plant built</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Jun</dt>
+                                    <dd>- S-EnPol, a bio-degradable plastic joint venture, established</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Jan</dt>
+                                    <dd>- Anhydrous Hydrogen Chloride plant built</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="scroll_item">
+                            <h3>2009</h3>
+                            <img src="./images/sub1_2/history05.jpg" alt="Color laser printer toner plant built">
+                            <div class="history_text">
+                                <dl>
+                                    <dt>Nov</dt>
+                                    <dd>- The ‘300-Million-USD Pagoda of Export’ from the Korean Minister of Trade, Industry & Energy received Europe office opened</dd>
+                                    <dd>- Citation of the Minister of Knowledge Economy received</dd>
+                                    <dd>- Color laser printer toner plant built</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="scroll_item">
+                            <h3>2000</h3>
+                            <img src="./images/sub1_2/history06.jpg" alt="AnyCoat plant built">
+                            <div class="history_text">
+                                <dl>
+                                    <dt>Oct</dt>
+                                    <dd>- DMAC plant built</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Jun</dt>
+                                    <dd>- AnyCoat plant built</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="scroll_item">
+                            <h3>1985</h3>
+                            <img src="./images/sub1_2/history07.jpg" alt="Ammonia storage tank built">
+                            <div class="history_text">
+                                <dl>
+                                    <dt>Oct</dt>
+                                    <dd>- Ammonia storage tank built</dd>
+                                </dl>
+                                <dl>
+                                    <dt>May</dt>
+                                    <dd>- Formic acid plant built</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="scroll_item">
+                            <h3>1964</h3>
+                            <img src="./images/sub1_2/history08.jpg" alt="Korea Fertilizer Industries founded">
+                            <div class="history_text">
+                                <dl>
+                                    <dt>Aug</dt>
+                                    <dd>- Korea Fertilizer Industries founded</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_common.js"></script>
+    <script src="./js/history_scroll.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+[
+    {
+        "title" : "Company",
+        "sub" : [
+            {
+                "title" : "Overview"
+            },
+            {
+                "title" : "History"
+            },
+            {
+                "title" : "Office Info"
+            }
+        ],
+        "visualImg" : "sub1_visual.jpg"
+    },
+    {
+        "title" : "Product&Tech",
+        "sub" : [
+            {
+                "title" : "Brand Story"
+            },
+            {
+                "title" : "R&D"
+            }
+        ],
+        "visualImg" : "sub2_visual.jpg"
+    },
+    {
+        "title" : "Sustainability",
+        "sub" : [
+            {
+                "title" : "Safety·Environmental"
+            },
+            {
+                "title" : "CSR"
+            }
+        ],
+        "visualImg" : "sub3_visual.jpg"
+    },
+    {
+        "title" : "PR Center",
+        "sub" : [
+            {
+                "title" : "Movies"
+            },
+            {
+                "title" : "Contact"
+            }
+        ],
+        "visualImg" : "sub4_visual.jpg"
+    }
+]

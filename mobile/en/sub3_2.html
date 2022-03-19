@@ -1,0 +1,111 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>Sustainability - CSR</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">Skip to main content</a>
+        <a href="#gnb">Skip to navigation</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual">
+            <h3></h3>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2></h2>
+            </div>
+            <!-- content_area -->
+            <div class="content_area">
+                <div class="category">
+                    <h3 class="hidden">>CSR Category</h3>
+                    <ul>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Dream</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>We are doing various support activities to support the dreams of children, adolescents, and single mothers and the theirs a stable life.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Society</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>We are promoting Win-Win with the local community through valuable sharing activities for neighbors who need help.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Eco</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>We are performing a green environment campaign by doing activities for responding to climate change and preserving sustainable natural environment.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Chemi</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>We are engaged in social contribution activities in connection with our business by supporting the development of human resources.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category_img">
+                                <h4>Fine Synergy</h4>
+                            </div>
+                            <div class="category_text">
+                                <p>We are adding the value of win-win and sharing through cooperation with LOTTE Group company, local governments and local social contribution organizations.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_common.js"></script>
+    
+</body>
+</html>

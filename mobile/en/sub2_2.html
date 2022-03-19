@@ -1,0 +1,117 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>Product&Tech - R&D</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">Skip to main content</a>
+        <a href="#gnb">Skip to navigation</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual">
+            <h3></h3>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2></h2>
+            </div>
+            <!-- content_area -->
+            <div class="content_area">
+                <div class="rnd">
+                    <ul>
+                        <li>
+                            <img src="./images/sub2_2/rnd01.jpg" alt="셀룰로스 유도체 연구">
+                            <div class="rnd_text">
+                                <h3>Research on Cellulose Derivatives</h3>
+                                <dl>
+                                    <dt>Development of water-soluble cellulose polymers</dt>
+                                    <dd>
+                                        LOTTE Fine Chemical is actively developing water-soluble cellulose polymers 
+                                        that are used across many areas of industry, including high-performance 
+                                        additives for construction, paint, and other areas (MECELLOSE®, HECELLOSE®). 
+                                        We will continue to engage in research and development to develop competitive 
+                                        products that exceed customer expectations, and will also develop technologies 
+                                        for the commercialization of new cellulose polymers.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/sub2_2/rnd02.jpg" alt="식품·의약 소재 연구">
+                            <div class="rnd_text">
+                                <h3>Research on Food and Medicinal Materials</h3>
+                                <dl>
+                                    <dt>Development of food and medicinal materials in various areas</dt>
+                                    <dd>
+                                        The food and medicinal materials research unit applied water-soluble cellulose 
+                                        polymers to develop pharmaceutical coating materials (AnyCoat-C, AnyCoat-P) and 
+                                        a food additive (AnyAddy®). It is developing various functional medicinal materials 
+                                        through R&D and technology support, and is also researching food-related technologies 
+                                        that can lead changes in food market trends, such as the focus on low fat and food safety.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/sub2_2/rnd03.jpg" alt="스페셜티 케미칼 연구">
+                            <div class="rnd_text">
+                                <h3>Research on Specialty Chemicals</h3>
+                                <dl>
+                                    <dt>Development of high added-value specialty chemicals</dt>
+                                    <dd>
+                                        The company is developing new, high added-value specialty chemicals based on its amine 
+                                        and chlor-alkali chemical technology platform. We are also looking to develop eco-friendly 
+                                        manufacturing process technologies, in an effort to realize our vision.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_common.js"></script>
+    
+</body>
+</html>

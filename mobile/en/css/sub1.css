@@ -1,0 +1,219 @@
+/* =============== .content_area =============== */
+.content_area{
+    padding: 0 15px;
+}
+
+.content_area > div{
+    margin-bottom: 50px;
+}
+
+
+
+/* =============== sub1_1 =============== */
+.sub1_1{
+    padding: 0;
+}
+
+.sub1_1 .greeting{
+    margin-bottom: 0;
+}
+
+.greeting .intro{
+    margin: 0 15px;
+    transform: translateY(-2.5rem);
+    background: var(--main-color);
+}
+
+.greeting .intro p{
+    color: #fff;
+    padding: 1rem;
+}
+
+.greeting .intro p span{
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.greeting_text{
+    margin: 0 15px;
+}
+
+.greeting_text p{
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+
+
+/* =============== sub1_2 =============== */
+.history{
+    position: relative;
+    padding-top: 50px;
+}
+
+.history::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 5px;
+    background: #aaa;
+}
+
+.history .circle{
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 100%;
+    z-index: 20;
+    transition: .5s linear;
+}
+
+.history .circle::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: var(--main-color);
+    border-radius: 100%;
+}
+
+.history ul li{
+    margin: 50px 0;
+    position: relative;
+    padding-left: 50px;
+}
+
+.history ul li:first-child{
+    margin-top: 30px;
+}
+
+.history ul li::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #aaa;
+}
+
+.history ul li::after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 45px;
+    border-top: 1px dashed #aaa;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.history ul li h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: 1s;
+}
+
+.history ul li img{
+    box-shadow: 0 0 30px rgb(132 132 132 / 30%);
+    margin-bottom: 20px;
+}
+
+.history ul li .history_text dl{
+    margin-bottom: 10px;
+}
+
+.history ul li .history_text dl dt{
+    display: block;
+    font-weight: 700;
+    transition: 1s;
+}
+
+/* === Scroll Effect === */
+.scroll_item.scroll-active h3{
+    color: var(--main-color);
+}
+
+.scroll_item.scroll-active .history_text dl dt{
+    color: var(--main-color);
+}
+
+
+
+/* =============== sub1_3 =============== */
+.office h3{
+    font-size: var(--title-font);
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.office h3::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 5px;
+    height: 80%;
+    background: var(--main-color);
+}
+
+.office_map{background: lightgray;}
+
+.office .office_info > div{
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.office .office_info > div:first-child{
+    border-bottom: 1px solid #aaa;
+}
+
+.office .office_info div .icon{
+    width: 10%;
+    float: left;
+    height: auto;
+    text-align: center;
+}
+
+.office .office_info div ul{
+    width: 80%;
+    float: right;
+}
+
+.office .office_info .address ul li{
+    margin-bottom: .75rem;
+}
+
+.office .office_info .address ul li span{
+    display: block;
+    font-weight: 700;
+}
+
+.office .office_info .traffic ul li:first-child span{
+    font-weight: 700;
+    color: green;
+    margin-right: 1rem;
+}
+
+.office .office_info .traffic ul li:last-child span{
+    font-weight: 700;
+    color: blue;
+    margin-right: 1rem;
+}

@@ -1,0 +1,87 @@
+<?
+	session_start();
+    
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in - User Agreement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./css/member_check.css">
+    
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/member_check.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a class="logo" href="../index.html">LOTTE FINE CHEMICAL</a></h1>
+    </header>
+
+    <article id="content">
+        <h2>User Agreement</h2>
+        <form name="fmember" class="join">
+            <!-- s.Services -->
+            <h3>Services</h3>
+            <div class="policy">
+                We may change, suspend or discontinue any of our Services. We may also modify our 
+                prices effective prospectively upon reasonable notice to the extent allowed under the law.
+                We don’t promise to store or keep showing any information and content that you’ve posted. 
+                Lotte Fine Chemical is not a storage service. You agree that we have no obligation to store, maintain 
+                or provide you a copy of any content or information that you or others provide, except to 
+                the extent required by applicable law and as noted in our Privacy Policy.
+            </div>
+            <div class="check">
+                <input type="checkbox" id="check01" name="agree">
+                <label for="check01">Agree on services.</label>
+            </div>
+            <!-- e.Services -->
+
+            <!-- s.Termination -->
+            <h3>Termination</h3>
+            <div class="policy">
+                Both you and Lotte Fine Chemical may terminate this Contract at any time with notice to the other. 
+                On termination, you lose the right to access or use the Services. The following shall 
+                survive termination:<br><br>
+
+                Our rights to use and disclose your feedback;<br>
+                Members and/or Visitors’ rights to further re-share content and information you shared through the Services;<br>
+                Sections 4, 6, 7, and 8.2 of this Contract;<br>
+                Any amounts owed by either party prior to termination remain owed after termination.
+            </div>
+            <div class="check">
+                <input type="checkbox" id="check03" name="agree">
+                <label for="check03">Agree on termination.</label>
+            </div>
+            <!-- e.Termination -->
+
+            <!-- s.Automated Processing -->
+            <h3>Automated Processing</h3>
+            <div class="policy">
+                We use the information and data that you provide and that we have about Members to 
+                make recommendations for connections, content and features that may be useful to 
+                you. For example, we use data and information about you to recommend jobs to you 
+                and you to recruiters. Keeping your profile accurate and up to date helps us to make 
+                these recommendations more accurate and relevant.
+            </div>
+            <div class="check">
+                <input type="checkbox" id="check04" name="agree">
+                <label for="check04">Agree on automated Processing.</label>
+            </div>
+            <!-- e.Automated Processing -->
+
+            <div class="buttons">
+                <button type="button" class="allcheck">Agree on all</button>
+                <button type="button" class="check_agree ok">Join</button>
+                <button type="button" class="cancel" onclick="join_cancel()">Cancel</button>
+            </div>
+        </form>
+	</article>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>Sustainability - Safety·Environmental</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">Skip to main content</a>
+        <a href="#gnb">Skip to navigation</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual">
+            <h3></h3>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2></h2>
+            </div>
+            <!-- content_area -->
+            <div class="content_area">
+                <div class="vision">
+                    <div class="center_container">
+                        <h3>Safety Management Vision</h3>
+                        <div class="vision_img">
+                            <p><span>"ZERO"</span> environmental safety</p>
+                        </div>
+                        <p>
+                            LOTTE Fine Chemical establishes and implements sustainable development and 
+                            production plans that respect people and the environment. We use field-centered 
+                            environmental safety management to strive for “Zero” environmental safety 
+                            accidents. This will help us to realize our vision of a workplace that is free 
+                            of accidents, pollution, and illness. Moreover, we build and implement environmental 
+                            and safety strategies based on the consensus among employees on the importance of 
+                            environmental management.
+                        </p>
+                    </div>
+                </div>
+                <div class="principle">
+                    <div class="center_container">
+                        <h3>Management Principle for HSE</h3>
+                        <ul>
+                            <li>
+                                <span>01</span>
+                                The company recognizes HSE as its top priority, and therefore 
+                                considers environmental safety above all else throughout the 
+                                entire process of product design, production, use, and disposal.
+                            </li>
+                            <li>
+                                <span>02</span>
+                                All employees undergo regular HSE training so that they observe 
+                                all laws, regulations, and other requirements. They also perform 
+                                HSE activities that prevent environmental accidents.
+                            </li>
+                            <li>
+                                <span>03</span>
+                                The company will build an advanced HSE management system, and will 
+                                establish a Process Safety Management (PSM) system that ensures the 
+                                efficient use of resources and energy, prevents environmental pollution 
+                                and accidents, and maintains clean and safe work environment.
+                            </li>
+                            <li>
+                                <span>04</span>
+                                The company will engage in dialogue with local residents, companies, 
+                                and our customers and shareholders, so that we can fulfill our corporate 
+                                social responsibilities through Responsible Care (RC) programs.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="management">
+                    <div class="center_container">
+                        <h3>Environmental Management</h3>
+                        <div class="tab_menu">
+                            <a href="#">Air Management</a>
+                            <ul>
+                                <li class="tab-active"><a href="#">Air Management</a></li>
+                                <li><a href="#">Water Quality Management</a></li>
+                                <li><a href="#">Management of Hazardous Chemicals</a></li>
+                                <li><a href="#">Reuse of Pollutants</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_con">
+                            <div class="tab-active">
+                                <dl>
+                                    <dt>Air Management</dt>
+                                    <dd>
+                                        Investments in air pollution prevention facilities 
+                                        (Selective Catalytic Reduction, Selective Non-Catalytic Reduction, 
+                                        desulfurization facilities, etc.) have maintained air pollution levels 
+                                        below our internal standards. In addition, a Tele-Monitoring System was 
+                                        installed at major outlets for the real-time monitoring of concentrations 
+                                        of pollutant emissions.
+                                    </dd>
+                                </dl>
+                                <img src="./images/sub3_1/management01.jpg" alt="Air Management">
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt>Water Quality Management</dt>
+                                    <dd>
+                                        LOTTE Fine Chemical treats wastewater from each plant at our epichlorohydrin 
+                                        treatment facility, and then sends it to a municipal sewage treatment center. 
+                                        We set a wastewater reduction target for each major source of wastewater 
+                                        generation, and make improvements to processes that can reuse wastewater.
+                                    </dd>
+                                </dl>
+                                <img src="./images/sub3_1/management02.jpg" alt="Water Quality Management">
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt>Management of Hazardous Chemicals</dt>
+                                    <dd>
+                                        There is a comprehensive management system in place for hazardous chemicals, 
+                                        from their arrival at our sites through to disposal. Hazardous chemicals used 
+                                        in the workplace are strictly handled in production, purchase, and use. In addition, 
+                                        new chemicals can be used only after approval.
+                                    </dd>
+                                </dl>
+                                <img src="./images/sub3_1/management03.jpg" alt="Management of Hazardous Chemicals">
+                            </div>
+                            <div>
+                                <dl>
+                                    <dt>Reuse of Pollutants</dt>
+                                    <dd>
+                                        Organic by-products are replacing chemicals (methanol) at sewage treatment plants, 
+                                        and waste acids generated in our industrial processes are reused as neutralizing 
+                                        chemicals.
+                                    </dd>
+                                </dl>
+                                <img src="./images/sub3_1/management04.jpg" alt="Reuse of Pollutants">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_common.js"></script>
+    <script src="./js/tab_menu.js"></script>
+
+    
+</body>
+</html>

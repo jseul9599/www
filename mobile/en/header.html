@@ -1,0 +1,68 @@
+<header id="headerArea">
+    <div class="menu_top">
+        <h1><a href="./index.html">LOTTE FINE CHEMICAL</a></h1>
+        <a href="#" class="menu_btn"><span></span></a>
+    </div>
+    <nav id="gnb">
+        <h2 class="hidden">Navigation</h2>
+        <div class="lang">
+            <a href="../index.html">KR</a>
+            <a href="./index.html" class="current">EN</a>
+        </div>
+        <ul>
+            <li>
+                <h3><a href="./sub1_1.html">Company</a></h3>
+                <ul>
+                    <li><a href="./sub1_1.html">Overview</a></li>
+                    <li><a href="./sub1_2.html">History</a></li>
+                    <li><a href="./sub1_3.html">Office Info</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3><a href="./sub2_1.html">Product&Tech</a></h3>
+                <ul>
+                    <li><a href="./sub2_1.html">Brand Story</a></li>
+                    <li><a href="./sub2_2.html">R&D</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3><a href="./sub3_1.html">Sustainability</a></h3>
+                <ul>
+                    <li><a href="./sub3_1.html">Safety·Environmental</a></li>
+                    <li><a href="./sub3_2.html">CSR</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3><a href="./sub4_1.html">PR Center</a></h3>
+                <ul>
+                    <li><a href="./sub4_1.html">Movies</a></li>
+                    <li><a href="./sub4_2.html">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="menu_member">
+            <?
+                if(!$userid){
+            ?>
+
+            <ul>
+                <li><a href="./login/login_form.php">Sign In</a></li>
+                <li><a href="./member/member_check.html">Join</a></li>
+            </ul>
+
+            <?
+                }else{
+            ?>
+
+            <p class="login_msg">Hello, <strong><?=$usernick?></strong></li>
+            <ul>
+                <li><a href="./login/logout.php">Sign Out</a></li>
+                <li><a href="./member/member_form_modify.php">My Details</a></li>
+            </ul>
+
+            <?
+                }
+            ?>
+        </div>
+    </nav>
+</header>

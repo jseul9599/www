@@ -1,0 +1,31 @@
+/* =============== .visual =============== */
+.visual{
+    height: 300px;
+    position: relative;
+}
+
+.visual h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+
+/* =============== #content .title_area =============== */
+#content .title_area{
+    margin: 50px 0;
+}
+
+#content .title_area h2{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#content img{
+    width: 100%;
+}

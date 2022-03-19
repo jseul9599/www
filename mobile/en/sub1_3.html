@@ -1,0 +1,137 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>Company - Office Info</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="js/prefixfree.min.js"></script>
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=30102e2970ba630804583cc709c8ce6f"></script>
+    <script src="./js/kakao_map.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">Skip to main content</a>
+        <a href="#gnb">Skip to navigation</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual">
+            <h3></h3>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2></h2>
+            </div>
+            <!-- content_area -->
+            <div class="content_area sub1_3">
+                <div class="office ulsan tab">
+                    <h3>Ulsan Complex</h3>
+                    <div class="office_map">
+                        <div id="mapUlsan" style="width:100%;height:300px;"></div>
+                    </div>
+                    <div class="office_info">
+                        <div class="address">
+                            <div class="icon"><img src="./images/sub1_3/office01.png" alt="icon image"></div>
+                            <ul>
+                                <li><span>Address</span>19, Yeocheon-ro, 217 beon-gil, Nam-gu, Ulsan, South Korea</li>
+                                <li><span>TEL</span><a href="tel:052-270-6114">052 - 270 - 6114</a></li>
+                                <li><span>FAX</span>052 - 272 - 7925</li>
+                            </ul>
+                        </div>
+                        <div class="traffic">
+                            <div class="icon"><img src="./images/sub1_3/office02.png" alt="icon image"></div>
+                            <ul><li><span>Green Bus</span>808, 807, 226</li>
+                                <li><span>Blue Bus</span>5001, 5002, 1703</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office seoul">
+                    <h3>Seoul Office</h3>
+                    <div class="office_map">
+                        <div id="mapSeoul" style="width:100%;height:300px;"></div>
+                    </div>
+                    <div class="office_info">
+                        <div class="address">
+                            <div class="icon"><img src="./images/sub1_3/office01.png" alt="icon image"></div>
+                            <ul>
+                                <li><span>Address</span>534, Teheran-ro, Gangnam-gu, Seoul, Korea</li>
+                                <li><span>TEL</span><a href="tel:02-6974-4500">02 - 6974 - 4500</a></li>
+                                <li><span>FAX</span>02 - 6974 - 4546</li>
+                            </ul>
+                        </div>
+                        <div class="traffic">
+                            <div class="icon"><img src="./images/sub1_3/office02.png" alt="icon image"></div>
+                            <ul><li><span>Green Bus</span>2416</li>
+                                <li><span>Blue Bus</span>146, 360, 740</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="office incheon">
+                    <h3>Incheon Plant</h3>
+                    <div class="office_map">
+                        <div id="mapIncheon" style="width:100%;height:300px;"></div>
+                    </div>
+                    <div class="office_info">
+                        <div class="address">
+                            <div class="icon"><img src="./images/sub1_3/office01.png" alt="icon image"></div>
+                            <ul>
+                                <li><span>Address</span>47, Namdong-daero, 79beon-gil, Namdong-gu, Incheon, South Korea</li>
+                                <li><span>TEL</span><a href="tel:032-816-5981">032 - 816 - 5981</a></li>
+                                <li><span>FAX</span>032 - 816 - 4501</li>
+                            </ul>
+                        </div>
+                        <div class="traffic">
+                            <div class="icon"><img src="./images/sub1_3/office02.png" alt="icon image"></div>
+                            <ul><li><span>Green Bus</span>55</li>
+                                <li><span>Blue Bus</span>3-2, 35, 65, 72</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_common.js"></script>
+    <script src="./js/kakao_map.js"></script>
+
+    
+</body>
+</html>

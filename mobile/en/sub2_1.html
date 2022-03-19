@@ -1,0 +1,143 @@
+<?
+	session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>Product&Tech - Brand Story</title>
+
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub_common.css">
+    <link rel="stylesheet" href="./css/sub2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="js/prefixfree.min.js"></script>
+    <script>
+        // <![CDATA[
+        try {
+        window.addEventListener('load', function(){
+            setTimeout(scrollTo, 0, 0, 1); 
+            }, false);
+        } 
+        catch(e) {}
+        // ]]>
+    </script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">Skip to main content</a>
+        <a href="#gnb">Skip to navigation</a>
+    </div>
+    
+    <div class="wrap">
+        <? include "./header.html" ?>
+
+        <div class="visual">
+            <h3></h3>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <h2></h2>
+            </div>
+            <!-- content-area -->
+            <div class="content_area">
+                <div class="brand">
+                    <ul>
+                        <li>
+                            <img src="./images/sub2_1/mecellose.jpg" alt="MECELLOSE">
+                            <div class="brand_text">
+                                <h3>MECELLOSE®</h3>
+                                <dl>
+                                    <dt>An Additive for Cement MECELLOSE®</dt>
+                                    <dd>
+                                        MECELLOSE, environmentally friendly, uses cellulose as a primary source, which 
+                                        can be obtained from wood or cotton. As thickening agent, humectant, lubricant, 
+                                        or stabilizer, the application of MECELLOSE varies from construction, cement and 
+                                        ceramic extrusion, polymerization, paint, detergent, and personal care.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/sub2_1/hecellose.jpg" alt="HECELLOSE">
+                            <div class="brand_text">
+                                <h3>HECELLOSE®</h3>
+                                <dl>
+                                    <dt>An Additive for Paint HECELLOSE®</dt>
+                                    <dd>
+                                        MECELLOSE, environmentally friendly, uses cellulose as a primary source, which can 
+                                        be obtained from wood or cotton. As thickening agent, humectant, lubricant, or 
+                                        stabilizer, the application of MECELLOSE varies from construction, cement and ceramic 
+                                        extrusion, polymerization, paint, detergent, and personal care.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/sub2_1/anycoat.jpg" alt="AnyCoat">
+                            <div class="brand_text">
+                                <h3>AnyCoat®</h3>
+                                <dl>
+                                    <dt>A Material for Pharmaceutical Capsules AnyCoat®</dt>
+                                    <dd>
+                                        AnyCoat® is a cellulose ether derivative.
+                                        AnyCoat® is compliant with USP/NF, EP, JP, KP, and etc. 
+                                        Besides, AnyCoat® has certificates of Kosher, ISO, DMF issued 
+                                        from US FDA, and COS issued from EDQM.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/sub2_1/anyaddy.jpg" alt="AnyAddy">
+                            <div class="brand_text">
+                                <h3>AnyAddy®</h3>
+                                <dl>
+                                    <dt>A Food Additive AnyAddy®</dt>
+                                    <dd>
+                                        AnyAddy® is a non-ionic water soluble cellulose ether, HPMC and 
+                                        MC. AnyAddy® comes from natural wood pulp, and satisfies all the 
+                                        requirements of the current USP, EP, and JP.
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/sub2_1/eurox.jpg" alt="EUROX">
+                            <div class="brand_text">
+                                <h3>EUROX®</h3>
+                                <dl>
+                                    <dt>A Nitrogen Oxide-Reducing Material EUROX®</dt>
+                                    <dd>
+                                        EUROX(Urea Solution) is a Catalytic reductant which is made 
+                                        of Urea and SPW(Super Pure Water). Entering of EURO6 
+                                        stage, EUROX is used for purifying Nitrogen Oxides(NOx).
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <? include "./footer.html" ?>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    
+    <script src="./js/common.js"></script>
+    <script src="./js/sub_common.js"></script>
+
+    
+</body>
+</html>

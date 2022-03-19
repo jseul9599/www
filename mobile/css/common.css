@@ -176,7 +176,7 @@ table{border-collapse: collapse;}
 
 #headerArea #gnb .menu_member{
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -190,14 +190,14 @@ table{border-collapse: collapse;}
 }
 
 #headerArea #gnb .menu_member ul li{
-    border: 1px solid #ED1C24;
-    padding: 5px 10px;
+    border: 1px solid var(--main-color);
+    padding: 3px 10px;
 }
 
 #headerArea #gnb .menu_member ul li a{
     font-size: 1.2rem;
     text-align: center;
-    color: #ED1C24;
+    color: var(--main-color);
 }
 
 #headerArea #gnb .menu_member .login_msg{
