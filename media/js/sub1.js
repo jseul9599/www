@@ -8,23 +8,23 @@ function changeInfo(cnt){
 
     if(isResized){
         if(cnt === 0){
-            galleryImg.src = './images/sub1/episodes_change01.jpg'
-            galleryEp.textContent = 'SEASON 1 EPISODE 4'
-            galleryTitle.textContent = 'Of Banquets, Bastards and Burials'
+            galleryImg.src = './images/sub1/episodes_change01.jpg';
+            galleryEp.textContent = 'SEASON 1 EPISODE 4';
+            galleryTitle.textContent = 'Of Banquets, Bastards and Burials';
         }else if(cnt === 3){
-            galleryImg.src = './images/sub1/episodes_change02.jpg'
-            galleryEp.textContent = 'SEASON 2 EPISODE 7'
-            galleryTitle.textContent = 'Voleth Meir'
+            galleryImg.src = './images/sub1/episodes_change02.jpg';
+            galleryEp.textContent = 'SEASON 2 EPISODE 7';
+            galleryTitle.textContent = 'Voleth Meir';
         }
     }else{
         if(cnt === 0){
-            galleryImg.src = './images/sub1/episodes01.jpg'
-            galleryEp.textContent = 'SEASON 1 EPISODE 1'
-            galleryTitle.textContent = 'The End’s Beginning'
+            galleryImg.src = './images/sub1/episodes01.jpg';
+            galleryEp.textContent = 'SEASON 1 EPISODE 1';
+            galleryTitle.textContent = 'The End’s Beginning';
         }else if(cnt === 3){
-            galleryImg.src = './images/sub1/episodes08.jpg'
-            galleryEp.textContent = 'SEASON 2 EPISODE 5'
-            galleryTitle.textContent = 'Turn Your Back'
+            galleryImg.src = './images/sub1/episodes08.jpg';
+            galleryEp.textContent = 'SEASON 2 EPISODE 5';
+            galleryTitle.textContent = 'Turn Your Back';
         }
     }
 }

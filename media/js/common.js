@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // =============== Header ===============
     $.ajax({
         url: 'header.html',
         dataType: 'html',

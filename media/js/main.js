@@ -1,3 +1,4 @@
+// =============== .trailers ===============
 const slider = document.querySelector('.trailers_slider');
 const sliderInner = document.querySelector('.trailers_slider ul');
 const progressBar = document.querySelector('.progressbar_inner');

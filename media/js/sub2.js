@@ -43,9 +43,9 @@ function createCharacters(){
             });
 
             characterClose.addEventListener('click', function(e){
-                e.preventDefault()
-                charactersInfo.classList.remove('active')
-                charactersWrap.classList.remove('active-hide')
+                e.preventDefault();
+                charactersInfo.classList.remove('active');
+                charactersWrap.classList.remove('active-hide');
                 body.style.overflowY = '';
             });
 

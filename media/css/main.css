@@ -31,7 +31,7 @@
 .videoBox .scroll_down::after{
    content: '';
    position: absolute;
-   top: 130%;
+   top: 140%;
    left: 50%;
    transform: translateX(-50%);
    width: 50px;
@@ -42,7 +42,7 @@
 
 @keyframes scroll_down_animation{
 	0%{transform: translateX(-50%) scale(1);}
-	100%{transform: translateX(-50%) scale(1.2);}
+	100%{transform: translateX(-50%) scale(1.25);}
 }
 
 
@@ -77,7 +77,6 @@
 #content section .title_box h3{
    text-align: center;
    font-size: 3rem;
-   margin-bottom: .85rem;
    line-height: 2.5rem;
    font-weight: 400;
 }
@@ -92,6 +91,7 @@
 #content section .title_box p{
    font-size: 1.15rem;
    text-align: center;
+   margin-top: 1.5rem;
 }
 
 
@@ -181,6 +181,7 @@
    left: 50%;
    transform: translate(-50%, -50%);
    font-size: 2rem;
+   transition: .6s;
 }
 
 .characters ul li a p{
@@ -229,6 +230,10 @@
    transform: translateY(-50%);
    opacity: 1;
    transition-delay: 0.15s;
+}
+
+.characters ul li.off:hover a i{
+   font-size: 3.5rem;
 }
 
 

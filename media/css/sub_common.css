@@ -70,10 +70,8 @@
 
 
 /* =============== #content Common =============== */
-/* #headerArea{border: 5px solid blue;} */
-
 #content{
-   background: rgb(13 13 13 / .9);
+   background: rgba(13 13 13 / .9);
 }
 
 #content img{
@@ -116,28 +114,19 @@
 
 /* ============== Media Query ============== */
 /* === Desktop === */
-@media screen and (max-width:1280px) {
-   /* #headerArea{border: 5px solid red;} */
-}
+@media screen and (max-width:1280px) {}
 
 
 /* === Tablet === */
-@media screen and (max-width:1024px) {
-   /* #headerArea{border: 5px solid hotpink;} */
-}
+@media screen and (max-width:1024px) {}
 
 
 /* === Tablet_small === */
-@media screen and (max-width:768px) {
-   /* #headerArea{border: 5px solid skyblue;} */
-}
+@media screen and (max-width:768px) {}
 
 
 /* === Mobile === */
 @media screen and (max-width:640px) {
-   /* #headerArea{border: 5px solid orange;} */
-   
-   
    .videoBox p{
       font-size: 3rem;
    }

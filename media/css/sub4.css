@@ -3,6 +3,13 @@
    content: 'THE WITCHER';
 }
 
+.gallery .center_container > p{
+   color: #fff;
+   text-align: center;
+   margin-bottom: 2rem;
+   font-size: 1.25rem;
+}
+
 .grid{
    transition: .3s;
 }

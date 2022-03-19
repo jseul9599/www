@@ -54,7 +54,7 @@ p,li,dd{line-height:1.5em;}
 
 #headerArea	.headerInner h1 a{
     display: block;
-    width: 106px;
+    width: 131px;
     height: 50px;
     background: url(../images/header_logo.png) no-repeat center/cover;
     text-indent: -999px;
@@ -79,7 +79,7 @@ p,li,dd{line-height:1.5em;}
     padding: 1rem;
     color: #fff;
     opacity: .75;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 400;
     transition: .3s;
 }
@@ -153,7 +153,7 @@ p,li,dd{line-height:1.5em;}
     }
 
     #headerArea	.headerInner h1 a{
-        width: 84px;
+        width: 104px;
         height: 40px;
         background: url(../images/header_logo.png) no-repeat center/cover;
     }
