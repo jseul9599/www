@@ -49,7 +49,7 @@
 
 /* =============== #content Common =============== */
 #content{
-   background: rgb(13 13 13 / .9);
+   background: rgba(13 13 13 / .9);
 }
 
 #content img{
@@ -78,7 +78,6 @@
    text-align: center;
    font-size: 3rem;
    margin-bottom: .85rem;
-
    line-height: 2.5rem;
    font-weight: 400;
 }
