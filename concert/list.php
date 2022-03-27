@@ -105,7 +105,7 @@
 				<strong>회사소식</strong>
 			</div>
 			<h2>회사소식</h2>
-			<p>롯데정밀화학의 생생한 이야기를 전합니다</p>
+			<p>롯데정밀화학이 화학으로 이로워지는 세상을 만들어갑니다</p>
 		</div>
 		<!-- content_area -->
 		<div class="content_area">

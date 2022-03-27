@@ -139,10 +139,6 @@
     color: #aaa;
 }
 
-#content .title_area .line_map i{
-    color: #ED1C24;
-}
-
 #content .title_area .line_map span::before,
 #content .title_area .line_map span::after{
     content: '\f105';
