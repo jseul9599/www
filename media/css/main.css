@@ -331,19 +331,11 @@
 
 /* ============== Media Query ============== */
 /* === Desktop === */
-@media screen and (max-width:1280px) {
-   /* #headerArea{border: 5px solid red;} */
-
-
-}
+@media screen and (max-width:1280px) {}
 
 
 /* === Tablet === */
 @media screen and (max-width:1024px) {
-   /* #headerArea{border: 5px solid hotpink;} */
-
-
-
    .characters ul{
       grid-template-columns: repeat(3, 1fr);
    }
@@ -369,10 +361,6 @@
 
 /* === Tablet_small === */
 @media screen and (max-width:768px) {
-   /* #headerArea{border: 5px solid skyblue;} */
-
-
-
    #content section .title_box p{
       text-align: justify;
    }
@@ -406,10 +394,6 @@
 
 /* === Mobile === */
 @media screen and (max-width:640px) {
-   /* #headerArea{border: 5px solid orange;} */
-
-
-
    #content section .center_container{
       width: auto;
       margin: 0 15px;
