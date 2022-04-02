@@ -119,6 +119,7 @@ img{border: 0; vertical-align: top;}
   float: left;
   width: 20%;
   height: 90px;
+  line-height: 90px;
   text-align: center;
   position: relative;
 }
@@ -187,6 +188,7 @@ img{border: 0; vertical-align: top;}
   float: left;
   width: 50%;
   height: 90px;
+  line-height: 90px;
   text-align: center;
 }
 
@@ -225,7 +227,6 @@ img{border: 0; vertical-align: top;}
 /* =============== #footerArea =============== */
 #footerArea{
   width: 100%;
-  clear: both;
   background: #231F20;
 }
 
@@ -236,28 +237,63 @@ img{border: 0; vertical-align: top;}
 }
 
 #footerArea .footer_top{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-#footerArea .footer_top::after{
+#footerArea .footer_bottom::after{
   content: '';
   display: block;
   clear: both;
 }
 
-#footerArea .footer_top .footer_logo{
+#footerArea .footer_bottom .footer_left{
+  width: 70%;
   float: left;
 }
 
-#footerArea .footer_top .family_site{
+#footerArea .footer_bottom .footer_left .footer_nav{
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#footerArea .footer_bottom .footer_left .footer_nav li{
+  float: left;
+  margin-right: 20px;
+}
+
+#footerArea .footer_bottom .footer_left .footer_nav li a{
+  color: #a0a0a0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#footerArea .footer_bottom .footer_left .footer_nav li a:hover{
+  color: #fff;
+}
+
+#footerArea .footer_bottom .footer_left address{
+  margin-bottom: 10px;
+  color: #a0a0a0;
+}
+
+#footerArea .footer_bottom .footer_left p{
+  color: #a0a0a0;
+}
+
+#footerArea .footer_bottom .footer_right{
+  width: 20%;
   float: right;
+}
+
+#footerArea .footer_bottom .footer_right .family_site{
   width: 200px;
   height: 50px;
+  margin-bottom: 15px;
   border: 1px solid #a0a0a0;
   position: relative;
 }
 
-#footerArea .footer_top .family_site .arrow{
+#footerArea .footer_bottom .footer_right .family_site .arrow{
   display: block;
   color: #a0a0a0;
   padding: 0 10px;
@@ -265,15 +301,15 @@ img{border: 0; vertical-align: top;}
   line-height: 50px;
 }
 
-#footerArea .footer_top .family_site .arrow i{
+#footerArea .footer_bottom .footer_right .family_site .arrow i{
   margin-left: 40px;
 }
 
-#footerArea .footer_top .family_site .arrow:hover{
+#footerArea .footer_bottom .footer_right .family_site .arrow:hover{
   color: #fff;
 }
 
-#footerArea .footer_top .family_site ul{
+#footerArea .footer_bottom .footer_right .family_site ul{
   position: absolute;
   bottom: 50px;
   left: 0;
@@ -282,77 +318,36 @@ img{border: 0; vertical-align: top;}
   display: none;
 }
 
-#footerArea .footer_top .family_site ul li{
+#footerArea .footer_bottom .footer_right .family_site ul li{
   height: 50px;
 }
 
-#footerArea .footer_top .family_site ul li a{
+#footerArea .footer_bottom .footer_right .family_site ul li a{
   display: block;
   color: #a0a0a0;
   line-height: 50px;
   padding-left: 10px;
 }
 
-#footerArea .footer_top .family_site ul li a:hover{
+#footerArea .footer_bottom .footer_right .family_site ul li a:hover{
   background: #a0a0a0;
   color: #231F20;
 }
 
-#footerArea .footer_bottom{
-  overflow: hidden;
-}
-
-#footerArea .footer_bottom .footer_nav{
+#footerArea .footer_bottom .footer_right .sns_box li{
   float: left;
-  margin-bottom: 10px;
-  overflow: hidden;
+  margin-right: 40px;
 }
 
-#footerArea .footer_bottom .footer_nav li{
-  float: left;
-  margin-right: 20px;
-}
-
-#footerArea .footer_bottom .footer_nav li a{
-  color: #a0a0a0;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-#footerArea .footer_bottom .sns_box{
-  float: right;
-}
-
-#footerArea .footer_bottom .sns_box li{
-  float: left;
-  margin-left: 40px;
-}
-
-#footerArea .footer_bottom .sns_box li a{
+#footerArea .footer_bottom .footer_right .sns_box li a{
   display: block;
   text-align: center;
   font-size: 20px;
   color: #a0a0a0;
 }
 
-#footerArea .footer_bottom ul li a:hover{
+#footerArea .footer_bottom .footer_right .sns_box li a:hover{
   color: #fff;
-}
-
-#footerArea .footer_bottom address{
-  color: #a0a0a0;
-  margin-bottom: 10px;
-  font-size: 18px;
-  clear: both;
-}
-
-#footerArea .footer_bottom address span{
-  margin-left: 20px;
-}
-
-#footerArea .footer_bottom p{
-  color: #a0a0a0;
-  font-size: 18px;
 }
 
 

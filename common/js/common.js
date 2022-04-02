@@ -72,16 +72,4 @@ $(document).ready(function(){
         e.preventDefault();
         $('.family_site ul').slideToggle();
     });
-
-    // $('.family_site ul').mouseleave(function(){
-    //     $('.family_site ul').hide();
-    // });
-    
-    //Set focus (** commented out as toggle doesn't work on the first click)
-    // $('.family_site .arrow').bind('focus', function(){
-    //     $('.family_site ul').show();
-    // });
-    // $('.family_site ul li:last a').bind('blur', function(){
-    //     $('.family_site ul').hide();
-    // });
 });
